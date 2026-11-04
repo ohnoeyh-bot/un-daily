@@ -2,29 +2,30 @@
   "date": "2026-11-04",
   "news": [
     {
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168731",
-      "published": "2026-11-03T12:00:00.000Z",
-      "original_title": "‘This is not about politics. This is about people’: UN warns of impact of deadly drone strikes in Sudan",
-      "headline": "UN warns drone strikes in Sudan are cutting vital civilian services",
-      "summary_en": "Intensifying drone attacks on civilian infrastructure in Sudan are disrupting electricity, water and fuel supplies, the UN's top official there has warned. Hundreds of aid trucks are stranded due to fuel shortages, and hospitals are struggling to maintain services such as dialysis. Denise Brown urged the international community to help end the fighting and provide urgent funding.",
-      "summary_ko": "수단 주재 유엔 최고 책임자는 민간 기반 시설에 대한 드론 공격이 격화되면서 전기, 물, 연료 공급이 차질을 빚고 있다고 경고했다. 연료 부족으로 수백 대의 구호 트럭이 발이 묶였고, 병원들은 투석 같은 서비스를 유지하는 데 어려움을 겪고 있다. 드니즈 브라운은 국제사회에 전투를 끝내고 긴급 자금을 지원하도록 도와달라고 촉구했다.",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-03T13:26:19.000Z",
+      "original_title": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+      "headline": "Russian bombs kill at least 31 at Ukrainian aid centre",
+      "headline_ko": "러시아 폭격으로 우크라이나 구호센터에서 최소 31명 사망",
+      "summary_en": "At least 31 people were killed when Russian aerial bombs hit an aid distribution centre in Komyshuvakha, Zaporizhia, according to a Ukrainian regional head. President Zelensky called the attack \"utterly horrific\" and said people were still under the rubble. Rescuers have at times had to halt their search because of Russian drone attacks.",
+      "summary_ko": "우크라이나 지역 책임자에 따르면, 러시아의 항공 폭탄이 자포리자주 코미슈바하의 구호품 배급센터를 타격해 최소 31명이 사망했다. 젤렌스키 대통령은 이번 공격을 \"극도로 끔찍하다\"고 표현하며 아직 잔해 아래에 사람들이 있다고 말했다. 구조대는 러시아의 드론 공격 때문에 때때로 수색을 중단해야 했다.",
       "vocab": [
         {
-          "en": "civilian infrastructure",
-          "ko": "민간 기반 시설"
+          "en": "aid distribution centre",
+          "ko": "구호품 배급센터"
         },
         {
-          "en": "stranded",
-          "ko": "발이 묶인, 오도 가도 못하는"
+          "en": "under the rubble",
+          "ko": "잔해 아래에"
         },
         {
-          "en": "fuel shortages",
-          "ko": "연료 부족"
+          "en": "halt",
+          "ko": "중단하다"
         },
         {
-          "en": "urge",
-          "ko": "촉구하다"
+          "en": "aerial bombs",
+          "ko": "항공 폭탄"
         }
       ]
     },
@@ -33,52 +34,54 @@
       "url": "https://www.bbc.co.uk/news/articles/cqp8genleg2ro?at_medium=RSS&at_campaign=rss",
       "published": "2026-11-03T07:29:46.000Z",
       "original_title": "Why a US-Russia showdown left Morocco celebrating",
-      "headline": "UN mission in Western Sahara ends after US-Russia deadlock",
-      "summary_en": "The UN peacekeeping mission in Western Sahara, Minurso, has ended after 35 years because the Security Council could not agree on its renewal. Russia vetoed a US-backed draft favouring Morocco's autonomy plan, and a rival Russian draft also failed. Morocco welcomed the outcome, while the Polisario Front condemned the US proposal.",
-      "summary_ko": "서사하라의 유엔 평화유지 임무인 미누르소가 안전보장이사회가 연장에 합의하지 못해 35년 만에 종료되었다. 러시아는 모로코의 자치안을 지지하는 미국 주도 결의안에 거부권을 행사했고, 러시아의 대안 결의안도 부결되었다. 모로코는 이 결과를 환영한 반면, 폴리사리오 전선은 미국의 제안을 규탄했다.",
+      "headline": "UN peacekeeping mission in Western Sahara ends after US-Russia deadlock",
+      "headline_ko": "미러 교착으로 서사하라 유엔 평화유지 임무 종료",
+      "summary_en": "The UN Security Council failed to renew its 35-year peacekeeping mission in Western Sahara after Russia vetoed a US proposal that favoured Morocco's autonomy plan. A rival Russian draft also failed. Morocco welcomed the outcome, while the Polisario Front condemned the US proposal and the UN chief warned of renewed hostilities.",
+      "summary_ko": "러시아가 모로코의 자치안을 지지하는 미국 제안에 거부권을 행사하면서, 유엔 안전보장이사회는 서사하라에서 35년간 이어진 평화유지 임무를 연장하지 못했다. 러시아의 대안 초안도 부결됐다. 모로코는 이 결과를 환영했고, 폴리사리오 전선은 미국 제안을 규탄했으며, 유엔 사무총장은 적대 행위 재개를 경고했다.",
       "vocab": [
-        {
-          "en": "peacekeeping mission",
-          "ko": "평화유지 임무"
-        },
         {
           "en": "veto",
           "ko": "거부권을 행사하다"
         },
         {
-          "en": "renewal",
-          "ko": "갱신, 연장"
+          "en": "renew",
+          "ko": "갱신하다, 연장하다"
         },
         {
-          "en": "condemn",
-          "ko": "규탄하다"
+          "en": "rival draft",
+          "ko": "대안 초안"
+        },
+        {
+          "en": "renewed hostilities",
+          "ko": "적대 행위 재개"
         }
       ]
     },
     {
       "source": "BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-03T13:26:19.000Z",
-      "original_title": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
-      "headline": "Russian bombs kill at least 31 at Ukrainian aid centre",
-      "summary_en": "At least 31 people were killed when Russian aerial bombs hit an aid distribution centre in the village of Komyshuvakha, Zaporizhia, Ukrainian officials said. President Zelensky called the attack \"utterly horrific\" and said people were still under the rubble. Peace talks between Ukraine, Russia and the US are due to resume in Abu Dhabi next week.",
-      "summary_ko": "우크라이나 당국은 러시아의 항공 폭탄이 자포리자 코미슈바하 마을의 구호품 배급소를 타격해 최소 31명이 숨졌다고 밝혔다. 젤렌스키 대통령은 이번 공격을 \"참으로 끔찍하다\"고 표현하며 아직 잔해 아래에 사람들이 있다고 말했다. 우크라이나, 러시아, 미국 간 평화 회담은 다음 주 아부다비에서 재개될 예정이다.",
+      "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-03T11:33:33.000Z",
+      "original_title": "US strikes Iranian island ahead of midterm elections",
+      "headline": "US strikes Iran's Qeshm Island just before midterm elections",
+      "headline_ko": "미국, 중간선거 직전 이란 케슘섬 공습",
+      "summary_en": "US officials told CBS that the US carried out limited, defensive strikes on Iran's Qeshm Island after Iran's Revolutionary Guards fired on a US aircraft. The attack came as mediators from Qatar and Pakistan stepped up efforts to prevent a return to all-out war. President Trump said he was in \"no rush\" to ramp up strikes.",
+      "summary_ko": "미국 당국자들은 CBS에 이란 혁명수비대가 미군 항공기에 발포한 뒤 미국이 이란 케슘섬에 제한적이고 방어적인 공습을 단행했다고 밝혔다. 이번 공격은 카타르와 파키스탄 중재자들이 전면전 재발을 막기 위한 노력을 강화하는 가운데 이뤄졌다. 트럼프 대통령은 공습 확대를 \"서두르지 않는다\"고 말했다.",
       "vocab": [
         {
-          "en": "aid distribution centre",
-          "ko": "구호품 배급소"
+          "en": "step up",
+          "ko": "강화하다"
         },
         {
-          "en": "under the rubble",
-          "ko": "잔해 아래에"
+          "en": "all-out war",
+          "ko": "전면전"
         },
         {
-          "en": "resume",
-          "ko": "재개하다"
+          "en": "ramp up",
+          "ko": "확대하다, 늘리다"
         },
         {
-          "en": "be due to",
-          "ko": "~할 예정이다"
+          "en": "mediator",
+          "ko": "중재자"
         }
       ]
     }
