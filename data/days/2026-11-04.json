@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-04",
+  "news": [
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168731",
+      "published": "2026-11-03T12:00:00.000Z",
+      "original_title": "‘This is not about politics. This is about people’: UN warns of impact of deadly drone strikes in Sudan",
+      "headline": "UN warns drone strikes in Sudan are cutting vital civilian services",
+      "summary_en": "Intensifying drone attacks on civilian infrastructure in Sudan are disrupting electricity, water and fuel supplies, the UN's top official there has warned. Hundreds of aid trucks are stranded due to fuel shortages, and hospitals are struggling to maintain services such as dialysis. Denise Brown urged the international community to help end the fighting and provide urgent funding.",
+      "summary_ko": "수단 주재 유엔 최고 책임자는 민간 기반 시설에 대한 드론 공격이 격화되면서 전기, 물, 연료 공급이 차질을 빚고 있다고 경고했다. 연료 부족으로 수백 대의 구호 트럭이 발이 묶였고, 병원들은 투석 같은 서비스를 유지하는 데 어려움을 겪고 있다. 드니즈 브라운은 국제사회에 전투를 끝내고 긴급 자금을 지원하도록 도와달라고 촉구했다.",
+      "vocab": [
+        {
+          "en": "civilian infrastructure",
+          "ko": "민간 기반 시설"
+        },
+        {
+          "en": "stranded",
+          "ko": "발이 묶인, 오도 가도 못하는"
+        },
+        {
+          "en": "fuel shortages",
+          "ko": "연료 부족"
+        },
+        {
+          "en": "urge",
+          "ko": "촉구하다"
+        }
+      ]
+    },
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqp8genleg2ro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-03T07:29:46.000Z",
+      "original_title": "Why a US-Russia showdown left Morocco celebrating",
+      "headline": "UN mission in Western Sahara ends after US-Russia deadlock",
+      "summary_en": "The UN peacekeeping mission in Western Sahara, Minurso, has ended after 35 years because the Security Council could not agree on its renewal. Russia vetoed a US-backed draft favouring Morocco's autonomy plan, and a rival Russian draft also failed. Morocco welcomed the outcome, while the Polisario Front condemned the US proposal.",
+      "summary_ko": "서사하라의 유엔 평화유지 임무인 미누르소가 안전보장이사회가 연장에 합의하지 못해 35년 만에 종료되었다. 러시아는 모로코의 자치안을 지지하는 미국 주도 결의안에 거부권을 행사했고, 러시아의 대안 결의안도 부결되었다. 모로코는 이 결과를 환영한 반면, 폴리사리오 전선은 미국의 제안을 규탄했다.",
+      "vocab": [
+        {
+          "en": "peacekeeping mission",
+          "ko": "평화유지 임무"
+        },
+        {
+          "en": "veto",
+          "ko": "거부권을 행사하다"
+        },
+        {
+          "en": "renewal",
+          "ko": "갱신, 연장"
+        },
+        {
+          "en": "condemn",
+          "ko": "규탄하다"
+        }
+      ]
+    },
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-03T13:26:19.000Z",
+      "original_title": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+      "headline": "Russian bombs kill at least 31 at Ukrainian aid centre",
+      "summary_en": "At least 31 people were killed when Russian aerial bombs hit an aid distribution centre in the village of Komyshuvakha, Zaporizhia, Ukrainian officials said. President Zelensky called the attack \"utterly horrific\" and said people were still under the rubble. Peace talks between Ukraine, Russia and the US are due to resume in Abu Dhabi next week.",
+      "summary_ko": "우크라이나 당국은 러시아의 항공 폭탄이 자포리자 코미슈바하 마을의 구호품 배급소를 타격해 최소 31명이 숨졌다고 밝혔다. 젤렌스키 대통령은 이번 공격을 \"참으로 끔찍하다\"고 표현하며 아직 잔해 아래에 사람들이 있다고 말했다. 우크라이나, 러시아, 미국 간 평화 회담은 다음 주 아부다비에서 재개될 예정이다.",
+      "vocab": [
+        {
+          "en": "aid distribution centre",
+          "ko": "구호품 배급소"
+        },
+        {
+          "en": "under the rubble",
+          "ko": "잔해 아래에"
+        },
+        {
+          "en": "resume",
+          "ko": "재개하다"
+        },
+        {
+          "en": "be due to",
+          "ko": "~할 예정이다"
+        }
+      ]
+    }
+  ],
+  "resolution": "A/RES/81/6"
+}
