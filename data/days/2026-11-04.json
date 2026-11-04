@@ -6,14 +6,15 @@
       "url": "https://www.bbc.co.uk/news/articles/cqp8genleg2ro?at_medium=RSS&at_campaign=rss",
       "published": "2026-11-03T07:29:46.000Z",
       "original_title": "Why a US-Russia showdown left Morocco celebrating",
-      "headline": "UN peacekeeping mission in Western Sahara ends after US-Russia deadlock",
-      "headline_ko": "미국-러시아 교착으로 서사하라 유엔 평화유지 임무 종료",
-      "summary_en": "The UN Security Council failed to renew its 35-year peacekeeping mission in Western Sahara after Russia vetoed a US-backed proposal favouring Morocco's autonomy plan. A rival Russian draft also failed. Morocco welcomed the outcome, while the UN chief warned of renewed hostilities with the Polisario Front.",
-      "summary_ko": "러시아가 모로코의 자치안을 지지하는 미국 주도 결의안에 거부권을 행사하면서 유엔 안전보장이사회는 35년간 이어진 서사하라 평화유지 임무를 연장하지 못했다. 러시아의 대안 결의안도 부결됐다. 모로코는 이 결과를 환영했지만, 유엔 사무총장은 폴리사리오 전선과의 적대 행위가 재개될 위험을 경고했다.",
+      "headline": "UN Western Sahara mission ends after US-Russia deadlock",
+      "headline_ko": "미국·러시아 교착으로 유엔 서사하라 임무 종료",
+      "summary_en": "The UN peacekeeping mission in Western Sahara has ended after 35 years because the Security Council failed to renew its mandate. Russia vetoed a US-backed draft favouring Morocco's autonomy plan, and a rival Russian draft also failed. Morocco welcomed the outcome, while the Polisario Front condemned the US proposal.",
+      "summary_ko": "안전보장이사회가 임무 연장에 실패하면서 35년간 이어진 유엔 서사하라 평화유지 임무가 종료됐다. 러시아는 모로코의 자치안을 지지하는 미국 지원 결의안에 거부권을 행사했고, 러시아가 낸 경쟁 결의안도 부결됐다. 모로코는 이 결과를 환영했고, 폴리사리오 전선은 미국 제안을 규탄했다.",
+      "background_ko": "서사하라는 아프리카 북서쪽 해안에 있는 땅으로, 1975년까지 스페인 식민지였어요. 그 뒤로 모로코는 자기 영토라고 주장하고, 알제리의 지원을 받는 폴리사리오 전선은 독립을 요구하며 오랫동안 다퉈 왔어요. 유엔 안전보장이사회에서는 상임이사국 한 나라만 반대해도 결의안이 통과되지 못하는데, 이것을 거부권이라고 해요.",
       "vocab": [
         {
-          "en": "renew",
-          "ko": "갱신하다, 연장하다"
+          "en": "renew its mandate",
+          "ko": "임무 권한을 연장하다"
         },
         {
           "en": "vetoed",
@@ -21,21 +22,21 @@
         },
         {
           "en": "rival",
-          "ko": "경쟁하는, 대안의"
+          "ko": "경쟁하는, 대항하는"
         },
         {
-          "en": "renewed hostilities",
-          "ko": "적대 행위 재개"
+          "en": "condemned",
+          "ko": "규탄했다"
         }
       ],
       "glossary": [
         {
-          "en": "peacekeeping mission",
-          "ko": "평화유지 임무"
-        },
-        {
           "en": "deadlock",
           "ko": "교착 상태"
+        },
+        {
+          "en": "peacekeeping mission",
+          "ko": "평화유지 임무"
         },
         {
           "en": "Security Council",
@@ -43,7 +44,11 @@
         },
         {
           "en": "renew",
-          "ko": "연장하다"
+          "ko": "갱신하다"
+        },
+        {
+          "en": "mandate",
+          "ko": "위임 권한"
         },
         {
           "en": "vetoed",
@@ -54,8 +59,8 @@
           "ko": "미국이 지지한"
         },
         {
-          "en": "proposal",
-          "ko": "제안, 결의안"
+          "en": "draft",
+          "ko": "초안"
         },
         {
           "en": "favouring",
@@ -67,11 +72,7 @@
         },
         {
           "en": "rival",
-          "ko": "대안의, 경쟁하는"
-        },
-        {
-          "en": "draft",
-          "ko": "초안"
+          "ko": "경쟁하는"
         },
         {
           "en": "welcomed",
@@ -82,168 +83,91 @@
           "ko": "결과"
         },
         {
-          "en": "renewed hostilities",
-          "ko": "적대 행위 재개"
+          "en": "condemned",
+          "ko": "규탄했다"
         }
       ]
     },
     {
-      "source": "BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-03T13:26:19.000Z",
-      "original_title": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
-      "headline": "Russian bombs kill at least 31 at Ukrainian aid centre",
-      "headline_ko": "러시아 폭격으로 우크라이나 구호센터에서 최소 31명 사망",
-      "summary_en": "At least nine 3,000kg aerial bombs hit an aid distribution centre in the village of Komyshuvakha, Zaporizhia, killing at least 31 people. President Zelensky called the attack \"utterly horrific\" and said people remained under the rubble. Rescue efforts have been halted at times by Russian drone attacks.",
-      "summary_ko": "3,000kg급 항공폭탄 최소 9발이 자포리자주 코미슈바하 마을의 구호물자 배급센터를 강타해 최소 31명이 숨졌다. 젤렌스키 대통령은 이번 공격을 \"참으로 끔찍하다\"고 표현하며 아직 잔해 아래에 사람들이 있다고 말했다. 구조 작업은 러시아의 드론 공격으로 때때로 중단되었다.",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes?traffic_source=rss",
+      "published": "2026-11-04T04:39:31.000Z",
+      "original_title": "Iran says US reply to Hormuz plan ‘unconvincing’; Trump confirms strikes",
+      "headline": "Iran rejects US reply on Hormuz as Trump confirms strikes",
+      "headline_ko": "이란, 호르무즈 관련 미국 답변 거부…트럼프는 공습 확인",
+      "summary_en": "Iran called the US response to its seven conditions for reopening the Strait of Hormuz \"unconvincing\". President Trump confirmed US strikes on an Iranian anti-aircraft facility, calling it a \"minor attack\". Qatar says indirect talks continue, while another oil tanker was attacked in the strait.",
+      "summary_ko": "이란은 호르무즈 해협 재개방을 위한 7가지 조건에 대한 미국의 답변이 \"설득력이 없다\"고 밝혔다. 트럼프 대통령은 미국이 이란의 대공 시설을 공습했다고 확인하며 이를 \"작은 공격\"이라고 불렀다. 카타르는 간접 협상이 계속되고 있다고 밝혔으며, 해협에서는 또 다른 유조선이 공격을 받았다.",
+      "background_ko": "호르무즈 해협은 페르시아만과 바다를 잇는 좁은 물길로, 세계 석유 수송에서 아주 중요한 길이에요. 미국과 이란은 수십 년째 사이가 나빠서, 미국은 이란에 경제 제재를 가해 왔어요. 카타르는 중동에서 서로 직접 대화하기 어려운 나라들 사이를 중재하는 역할을 자주 해요.",
       "vocab": [
         {
-          "en": "aid distribution centre",
-          "ko": "구호물자 배급센터"
+          "en": "unconvincing",
+          "ko": "설득력 없는"
         },
         {
-          "en": "utterly horrific",
-          "ko": "참으로 끔찍한"
+          "en": "confirmed",
+          "ko": "확인했다"
         },
         {
-          "en": "under the rubble",
-          "ko": "잔해 아래에"
+          "en": "indirect talks",
+          "ko": "간접 협상"
         },
         {
-          "en": "halted",
-          "ko": "중단된"
+          "en": "reopening",
+          "ko": "재개방"
         }
       ],
       "glossary": [
         {
-          "en": "aid centre",
-          "ko": "구호센터"
+          "en": "rejects",
+          "ko": "거부하다"
         },
         {
-          "en": "aerial bombs",
-          "ko": "항공폭탄"
+          "en": "reply",
+          "ko": "답변"
         },
-        {
-          "en": "aid distribution centre",
-          "ko": "구호물자 배급센터"
-        },
-        {
-          "en": "village",
-          "ko": "마을"
-        },
-        {
-          "en": "utterly",
-          "ko": "완전히, 극도로"
-        },
-        {
-          "en": "horrific",
-          "ko": "끔찍한"
-        },
-        {
-          "en": "remained",
-          "ko": "남아 있었다"
-        },
-        {
-          "en": "rubble",
-          "ko": "잔해"
-        },
-        {
-          "en": "Rescue efforts",
-          "ko": "구조 작업"
-        },
-        {
-          "en": "halted",
-          "ko": "중단된"
-        },
-        {
-          "en": "at times",
-          "ko": "때때로"
-        },
-        {
-          "en": "drone attacks",
-          "ko": "드론 공격"
-        }
-      ]
-    },
-    {
-      "source": "BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-03T11:33:33.000Z",
-      "original_title": "US strikes Iranian island ahead of midterm elections",
-      "headline": "US strikes Iran's Qeshm Island ahead of midterm elections",
-      "headline_ko": "미국, 중간선거 앞두고 이란 케슘섬 공습",
-      "summary_en": "US officials say strikes on Iran's Qeshm Island in the Strait of Hormuz were limited and defensive, responding to Iranian forces firing on a US aircraft. Iran said it shot down three US drones. Meanwhile, Qatari and Pakistani mediators are stepping up efforts to prevent a return to all-out war.",
-      "summary_ko": "미국 관리들은 호르무즈 해협의 이란 케슘섬에 대한 공습이 이란군의 미 항공기 사격에 대응한 제한적이고 방어적인 조치였다고 밝혔다. 이란은 미국 드론 3대를 격추했다고 주장했다. 한편 카타르와 파키스탄 중재자들은 전면전 재발을 막기 위한 노력을 강화하고 있다.",
-      "vocab": [
-        {
-          "en": "defensive",
-          "ko": "방어적인"
-        },
-        {
-          "en": "shot down",
-          "ko": "격추했다"
-        },
-        {
-          "en": "stepping up",
-          "ko": "강화하는"
-        },
-        {
-          "en": "all-out war",
-          "ko": "전면전"
-        }
-      ],
-      "glossary": [
         {
           "en": "strikes",
           "ko": "공습"
         },
         {
-          "en": "ahead of",
-          "ko": "~을 앞두고"
+          "en": "conditions",
+          "ko": "조건"
         },
         {
-          "en": "midterm elections",
-          "ko": "중간선거"
+          "en": "reopening",
+          "ko": "재개방"
         },
         {
-          "en": "officials",
-          "ko": "관리들"
+          "en": "Strait of Hormuz",
+          "ko": "호르무즈 해협"
         },
         {
-          "en": "Strait",
+          "en": "unconvincing",
+          "ko": "설득력 없는"
+        },
+        {
+          "en": "confirmed",
+          "ko": "확인했다"
+        },
+        {
+          "en": "anti-aircraft facility",
+          "ko": "대공 시설"
+        },
+        {
+          "en": "minor attack",
+          "ko": "작은 공격"
+        },
+        {
+          "en": "indirect talks",
+          "ko": "간접 협상"
+        },
+        {
+          "en": "oil tanker",
+          "ko": "유조선"
+        },
+        {
+          "en": "strait",
           "ko": "해협"
-        },
-        {
-          "en": "limited",
-          "ko": "제한적인"
-        },
-        {
-          "en": "defensive",
-          "ko": "방어적인"
-        },
-        {
-          "en": "firing on",
-          "ko": "~에 사격하는"
-        },
-        {
-          "en": "aircraft",
-          "ko": "항공기"
-        },
-        {
-          "en": "shot down",
-          "ko": "격추했다"
-        },
-        {
-          "en": "mediators",
-          "ko": "중재자들"
-        },
-        {
-          "en": "stepping up",
-          "ko": "강화하는"
-        },
-        {
-          "en": "all-out war",
-          "ko": "전면전"
         }
       ]
     }
