@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 0 * * *"    # 매일 한국시간 오전 9시
   workflow_dispatch:        # 수동 실행 버튼
+    inputs:
+      force:
+        description: "오늘 자료를 지우고 다시 만들기"
+        type: boolean
+        default: false
   push:
     branches: [main]
 
@@ -36,7 +41,7 @@ jobs:
           ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
           ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
-        run: node scripts/update.mjs
+        run: node scripts/update.mjs ${{ inputs.force && '--force' || '' }}
       - name: 저장(커밋)
         if: always() && github.event_name != 'push'
         run: |

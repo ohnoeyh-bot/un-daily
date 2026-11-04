@@ -270,6 +270,14 @@ if (process.argv.includes("--check")) {
   process.exit(0);
 }
 const dayFile = path.join(DATA, "days", today + ".json");
+// 하루 한 번만: 오늘 자료가 이미 있으면 아무것도 바꾸지 않는다 (--force 일 때만 다시 만듦)
+if (fs.existsSync(dayFile) && !process.argv.includes("--force")) {
+  const done = JSON.parse(fs.readFileSync(dayFile, "utf8"));
+  if (done.news?.length && done.resolution) {
+    console.log("오늘 자료가 이미 있어 건너뜀:", today);
+    process.exit(0);
+  }
+}
 const errors = [];
 let news = [], resolution = null;
 try { news = await makeNews(); } catch (e) { errors.push("news: " + e.message); }
