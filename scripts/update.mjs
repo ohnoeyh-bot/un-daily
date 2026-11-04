@@ -158,15 +158,16 @@ async function makeNews() {
       "- id: same id\n- headline: plain English headline, max 12 words\n- headline_ko: natural Korean translation of headline\n" +
       "- summary_en: 2-3 sentences, max 60 words, clear and neutral\n" +
       "- summary_ko: natural Korean translation of summary_en\n" +
-      "- vocab: 3-4 useful English words or phrases that appear in summary_en, with Korean meaning (ko)\n\n" +
+      "- vocab: 3-4 useful English words or phrases that appear in summary_en, with Korean meaning (ko)\n" +
+      "- glossary: EVERY word or phrase in headline and summary_en that a Korean B2 learner might look up (usually 8-15). en = exactly as it appears in the text; ko = short Korean meaning in this context\n\n" +
       JSON.stringify(chosen.map(({ id, source, title, desc, body }) => ({ id, source, title, desc, body: body || desc }))),
-    schema: obj({ news: { type: "array", items: obj({ id: { type: "integer" }, headline: str, headline_ko: str, summary_en: str, summary_ko: str, vocab: VOCAB }) } }),
+    schema: obj({ news: { type: "array", items: obj({ id: { type: "integer" }, headline: str, headline_ko: str, summary_en: str, summary_ko: str, vocab: VOCAB, glossary: VOCAB }) } }),
   });
 
   return chosen.map((c) => {
     const n = news.find((x) => x.id === c.id);
     if (!n) throw new Error("요약 누락: " + c.title);
-    return { source: c.source, url: c.url, published: c.published, original_title: c.title, headline: n.headline, headline_ko: n.headline_ko, summary_en: n.summary_en, summary_ko: n.summary_ko, vocab: n.vocab };
+    return { source: c.source, url: c.url, published: c.published, original_title: c.title, headline: n.headline, headline_ko: n.headline_ko, summary_en: n.summary_en, summary_ko: n.summary_ko, vocab: n.vocab, glossary: n.glossary };
   });
 }
 
@@ -223,13 +224,15 @@ async function makeResolution() {
         "- n: same number\n- lead: the opening participle/phrase exactly as it starts the paragraph (e.g. 'Reaffirming', 'Expressing deep concern', 'Recognizing also')\n" +
         "- ko: faithful Korean translation of the whole paragraph\n\n" +
         "Also return:\n- topic_en: what this resolution is about, short English line (e.g. 'Children and armed conflict: digital technologies')\n- topic_ko: the same in Korean\n" +
-        "- vocab: 6-10 typical UN expressions used in these paragraphs (en exactly as written, ko meaning)\n\n" +
+        "- vocab: 6-10 typical UN expressions used in these paragraphs (en exactly as written, ko meaning)\n" +
+        "- glossary: EVERY word or phrase in the paragraphs that a Korean B2 learner might look up (en exactly as written, ko = short meaning in this context)\n\n" +
         pre.paragraphs.map((p, i) => `[${i + 1}] ${p}`).join("\n\n"),
       schema: obj({
         topic_en: str,
         topic_ko: str,
         paragraphs: { type: "array", items: obj({ n: { type: "integer" }, lead: str, ko: str }) },
         vocab: VOCAB,
+        glossary: VOCAB,
       }),
       maxTokens: 32000,
     });
@@ -245,7 +248,7 @@ async function makeResolution() {
     const body = /^S\//.test(r.symbol) ? "Security Council" : "General Assembly";
     fs.writeFileSync(
       file,
-      JSON.stringify({ ...r, body, opening: pre.opening, topic_en: res.topic_en, topic_ko: res.topic_ko, paragraphs, vocab: res.vocab }, null, 2)
+      JSON.stringify({ ...r, body, opening: pre.opening, topic_en: res.topic_en, topic_ko: res.topic_ko, paragraphs, vocab: res.vocab, glossary: res.glossary }, null, 2)
     );
     console.log("새 결의문:", r.symbol, paragraphs.length + "문단");
     return r.symbol;
