@@ -155,18 +155,18 @@ async function makeNews() {
     system: "You write short, accurate English news briefs for an advanced learner of English (B2-C1). Use only facts stated in the given article text. Never add facts.",
     prompt:
       "For each article below write:\n" +
-      "- id: same id\n- headline: plain English headline, max 12 words\n" +
+      "- id: same id\n- headline: plain English headline, max 12 words\n- headline_ko: natural Korean translation of headline\n" +
       "- summary_en: 2-3 sentences, max 60 words, clear and neutral\n" +
       "- summary_ko: natural Korean translation of summary_en\n" +
       "- vocab: 3-4 useful English words or phrases that appear in summary_en, with Korean meaning (ko)\n\n" +
       JSON.stringify(chosen.map(({ id, source, title, desc, body }) => ({ id, source, title, desc, body: body || desc }))),
-    schema: obj({ news: { type: "array", items: obj({ id: { type: "integer" }, headline: str, summary_en: str, summary_ko: str, vocab: VOCAB }) } }),
+    schema: obj({ news: { type: "array", items: obj({ id: { type: "integer" }, headline: str, headline_ko: str, summary_en: str, summary_ko: str, vocab: VOCAB }) } }),
   });
 
   return chosen.map((c) => {
     const n = news.find((x) => x.id === c.id);
     if (!n) throw new Error("요약 누락: " + c.title);
-    return { source: c.source, url: c.url, published: c.published, original_title: c.title, headline: n.headline, summary_en: n.summary_en, summary_ko: n.summary_ko, vocab: n.vocab };
+    return { source: c.source, url: c.url, published: c.published, original_title: c.title, headline: n.headline, headline_ko: n.headline_ko, summary_en: n.summary_en, summary_ko: n.summary_ko, vocab: n.vocab };
   });
 }
 

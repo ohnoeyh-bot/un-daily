@@ -148,7 +148,7 @@ function newsCard(n, i) {
     <div class="meta"><span class="num">${String(i + 1).padStart(2, "0")}</span>·<span>${esc(n.source)}</span>·<span>${ago(n.published)}</span></div>
     <h3>${esc(n.headline)}</h3>
     <p class="en">${esc(n.summary_en)}</p>
-    <div class="ko" hidden>${esc(n.summary_ko)}</div>
+    <div class="ko" hidden>${n.headline_ko ? `<b>${esc(n.headline_ko)}</b><br>` : ""}${esc(n.summary_ko)}</div>
     <div hidden data-v>${vocabList(n.vocab)}</div>
     <div class="tools">
       <button class="chip" data-toggle="ko" aria-pressed="false">해석</button>
