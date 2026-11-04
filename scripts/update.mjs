@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { oidcFederationProvider } from "@anthropic-ai/sdk/lib/credentials/oidc-federation";
 import { extractPreamble } from "./preamble.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -12,7 +13,34 @@ const DATA = path.join(ROOT, "data");
 const UA = { "User-Agent": "Mozilla/5.0 (un-daily study app)" };
 const MODEL = "claude-opus-5-5";
 
-const client = new Anthropic();
+// 로그인 방식
+// - GitHub Actions 안: 워크로드 ID(키 없이 GitHub 신분증으로 로그인). 호출할 때마다 GitHub에서 새 신분증을 받는다
+// - 내 Mac: ANTHROPIC_API_KEY 환경변수
+function makeClient() {
+  const env = process.env;
+  if (env.ANTHROPIC_FEDERATION_RULE_ID && env.ACTIONS_ID_TOKEN_REQUEST_URL) {
+    const githubToken = async () => {
+      const res = await fetch(`${env.ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${encodeURIComponent("https://api.anthropic.com")}`, {
+        headers: { Authorization: `Bearer ${env.ACTIONS_ID_TOKEN_REQUEST_TOKEN}` },
+      });
+      if (!res.ok) throw new Error("GitHub 신분증(OIDC 토큰) 발급 실패: " + res.status);
+      return (await res.json()).value;
+    };
+    return new Anthropic({
+      credentials: oidcFederationProvider({
+        identityTokenProvider: githubToken,
+        federationRuleId: env.ANTHROPIC_FEDERATION_RULE_ID,
+        organizationId: env.ANTHROPIC_ORGANIZATION_ID,
+        serviceAccountId: env.ANTHROPIC_SERVICE_ACCOUNT_ID,
+        workspaceId: env.ANTHROPIC_WORKSPACE_ID || undefined,
+        baseURL: "https://api.anthropic.com",
+        fetch,
+      }),
+    });
+  }
+  return new Anthropic();
+}
+const client = process.argv.includes("--check") ? null : makeClient();
 
 // 한국 시간 기준 오늘 날짜
 const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);

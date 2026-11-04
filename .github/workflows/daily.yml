@@ -31,7 +31,11 @@ jobs:
       - name: 뉴스·결의문 만들기
         if: github.event_name != 'push'
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 키 대신 워크로드 ID(WIF). 값은 저장소 Settings > Variables 에 저장
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
         run: node scripts/update.mjs
       - name: 저장(커밋)
         if: always() && github.event_name != 'push'
