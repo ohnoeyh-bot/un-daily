@@ -24,7 +24,11 @@ function makeClient() {
         headers: { Authorization: `Bearer ${env.ACTIONS_ID_TOKEN_REQUEST_TOKEN}` },
       });
       if (!res.ok) throw new Error("GitHub 신분증(OIDC 토큰) 발급 실패: " + res.status);
-      return (await res.json()).value;
+      const jwt = (await res.json()).value;
+      // 로그인 실패 원인 확인용: 신분증의 내용(서명 제외)만 기록
+      const c = JSON.parse(Buffer.from(jwt.split(".")[1], "base64url").toString());
+      console.log("GitHub 신분증:", JSON.stringify({ sub: c.sub, aud: c.aud, repository_owner: c.repository_owner, repository_owner_id: c.repository_owner_id, ref: c.ref, event_name: c.event_name }));
+      return jwt;
     };
     return new Anthropic({
       credentials: oidcFederationProvider({
@@ -71,7 +75,8 @@ const decode = (s = "") =>
 
 // 구조화 출력: 정해진 JSON 모양으로만 답하게 한다
 async function ask({ system, prompt, schema, maxTokens = 16000 }) {
-  const res = await client.beta.messages.create({
+  // 긴 답(결의문 번역)은 스트리밍으로 받아야 시간 제한에 안 걸린다
+  const res = await client.beta.messages.stream({
     model: MODEL,
     max_tokens: maxTokens,
     betas: ["server-side-fallback-2026-07-01"],
@@ -79,7 +84,7 @@ async function ask({ system, prompt, schema, maxTokens = 16000 }) {
     output_config: { effort: "low", format: { type: "json_schema", schema } },
     system,
     messages: [{ role: "user", content: prompt }],
-  });
+  }).finalMessage();
   if (res.stop_reason === "refusal") throw new Error("AI가 요청을 거절함: " + JSON.stringify(res.stop_details));
   if (res.stop_reason === "max_tokens") throw new Error("AI 답이 길이 제한에서 잘림");
   const text = res.content.filter((b) => b.type === "text").map((b) => b.text).join("");

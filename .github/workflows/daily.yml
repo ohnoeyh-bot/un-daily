@@ -2,7 +2,7 @@ name: daily-update
 
 on:
   schedule:
-    - cron: "0 21 * * *"   # 매일 한국시간 오전 6시
+    - cron: "0 0 * * *"    # 매일 한국시간 오전 9시
   workflow_dispatch:        # 수동 실행 버튼
   push:
     branches: [main]
