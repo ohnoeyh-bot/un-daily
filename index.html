@@ -76,6 +76,9 @@ h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .vocab li b { font-weight: 600; flex: 0 0 46%; }
 .vocab li span { color: var(--muted); }
 [hidden] { display: none !important; }
+.bg { font-size: 14px; line-height: 1.6; color: var(--muted); background: var(--bg); border-radius: 10px; padding: 9px 12px; margin: 0 0 10px; }
+.bg b { color: var(--accent); font-weight: 600; margin-right: 6px; }
+.res .bg { margin: 14px 0 0; }
 
 /* 결의문 */
 .res { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 20px 18px; }
@@ -192,6 +195,7 @@ function newsCard(n, i) {
   return `<article class="card" data-src="${esc(n.headline)}">
     <div class="meta"><span class="num">${String(i + 1).padStart(2, "0")}</span>·<span>${esc(n.source)}</span>·<span>${ago(n.published)}</span></div>
     <h3>${esc(n.headline)}</h3>
+    ${n.background_ko ? `<p class="bg"><b>배경</b>${esc(n.background_ko)}</p>` : ""}
     <p class="en">${esc(n.summary_en)}</p>
     <div class="ko" hidden>${n.headline_ko ? `<b>${esc(n.headline_ko)}</b><br>` : ""}${esc(n.summary_ko)}</div>
     <div hidden data-v>${vocabList(n.vocab)}</div>
@@ -216,6 +220,7 @@ function resolutionView(r) {
     <h3>${esc(r.topic_en || r.title)}</h3>
     <p class="topic-ko">${esc(r.topic_ko || "")}</p>
     <p class="adopted">${esc(r.body)} · ${esc(r.adopted)} 채택 · 서문 ${r.paragraphs.length}문단</p>
+    ${r.background_ko ? `<p class="bg"><b>배경</b>${esc(r.background_ko)}</p>` : ""}
     <div class="res-tools">
       <button class="chip" id="allko" aria-pressed="false">해석 모두 보기</button>
       <a class="chip" href="${esc(r.pdf_url)}" target="_blank" rel="noopener">원문 PDF ↗</a>

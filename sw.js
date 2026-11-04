@@ -1,5 +1,5 @@
 // 오프라인 대비: 항상 인터넷에서 먼저 받고, 안 되면 저장본을 보여준다
-const VERSION = "undaily-v5";
+const VERSION = "undaily-v6";
 self.addEventListener("install", (e) => self.skipWaiting());
 self.addEventListener("activate", (e) =>
   e.waitUntil(

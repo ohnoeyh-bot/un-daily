@@ -1,4 +1,4 @@
-// 매일 한 번 실행: 국제뉴스 3개 + 최신 UN 결의문 서문을 모아 data/ 에 저장한다.
+// 매일 한 번 실행: 국제뉴스 2개 + 최신 UN 결의문 서문을 모아 data/ 에 저장한다.
 // 실행: ANTHROPIC_API_KEY=... node scripts/update.mjs
 import Anthropic from "@anthropic-ai/sdk";
 import { execFileSync } from "node:child_process";
@@ -97,6 +97,14 @@ const obj = (props, required = Object.keys(props)) => ({
 const str = { type: "string" };
 const VOCAB = { type: "array", items: obj({ en: str, ko: str }) };
 
+// 배경지식: 기사·결의문을 처음 보는 사람도 이해하도록, 쉬운 한국어로 짧게
+const BG_RULES =
+  "  Write in easy, friendly Korean for someone with no prior knowledge (like explaining to a friend). 2-3 short sentences.\n" +
+  "  Explain the well-established context needed to understand it: who the main actors are, what the long-running issue is, why it matters, or what an unfamiliar organisation/term means.\n" +
+  "  Use only widely known, uncontroversial facts; no speculation, no new news, and do not repeat the summary.\n";
+const BG_NEWS = "- background_ko: background knowledge for this story.\n" + BG_RULES;
+const BG_RES = "- background_ko: background knowledge for this resolution: what problem it deals with and why the UN body is addressing it.\n" + BG_RULES;
+
 // ---------- 1. 뉴스 ----------
 const FEEDS = [
   { source: "UN News", url: "https://news.un.org/feed/subscribe/en/news/all/rss.xml" },
@@ -134,40 +142,41 @@ async function articleText(url) {
 
 async function makeNews() {
   const items = await collectItems();
-  if (items.length < 3) throw new Error(`최근 기사가 ${items.length}개뿐`);
+  if (items.length < 2) throw new Error(`최근 기사가 ${items.length}개뿐`);
   console.log("수집 기사:", items.length);
 
   const { picks } = await ask({
     system: "You are the editor of a daily international-affairs briefing for a Korean graduate-school applicant preparing for a career in international organizations.",
     prompt:
-      "Below are recent headlines (JSON). Pick exactly 3 stories for today's briefing.\n" +
-      "Rules:\n- international significance (diplomacy, conflict, UN, global economy, climate, human rights)\n- 3 different topics/regions, no duplicates of the same event\n- skip sport, celebrity, live blogs, opinion pieces\n\n" +
+      "Below are recent headlines (JSON). Pick exactly 2 stories for today's briefing.\n" +
+      "Rules:\n- international significance (diplomacy, conflict, UN, global economy, climate, human rights)\n- 2 different topics/regions, no duplicates of the same event\n- skip sport, celebrity, live blogs, opinion pieces\n\n" +
       JSON.stringify(items.map(({ id, source, title, desc }) => ({ id, source, title, desc }))),
     schema: obj({ picks: { type: "array", items: obj({ id: { type: "integer" }, why: str }) } }),
     maxTokens: 4000,
   });
 
-  const chosen = picks.slice(0, 3).map((p) => items.find((x) => x.id === p.id)).filter(Boolean);
-  if (chosen.length < 3) throw new Error("AI가 기사 3개를 고르지 못함");
+  const chosen = picks.slice(0, 2).map((p) => items.find((x) => x.id === p.id)).filter(Boolean);
+  if (chosen.length < 2) throw new Error("AI가 기사 2개를 고르지 못함");
   for (const c of chosen) c.body = await articleText(c.url);
 
   const { news } = await ask({
-    system: "You write short, accurate English news briefs for an advanced learner of English (B2-C1). Use only facts stated in the given article text. Never add facts.",
+    system: "You write short, accurate English news briefs for an advanced learner of English (B2-C1). In headline and summaries use only facts stated in the given article text. Never add facts there.",
     prompt:
       "For each article below write:\n" +
       "- id: same id\n- headline: plain English headline, max 12 words\n- headline_ko: natural Korean translation of headline\n" +
       "- summary_en: 2-3 sentences, max 60 words, clear and neutral\n" +
       "- summary_ko: natural Korean translation of summary_en\n" +
+      BG_NEWS +
       "- vocab: 3-4 useful English words or phrases that appear in summary_en, with Korean meaning (ko)\n" +
       "- glossary: EVERY word or phrase in headline and summary_en that a Korean B2 learner might look up (usually 8-15). en = exactly as it appears in the text; ko = short Korean meaning in this context\n\n" +
       JSON.stringify(chosen.map(({ id, source, title, desc, body }) => ({ id, source, title, desc, body: body || desc }))),
-    schema: obj({ news: { type: "array", items: obj({ id: { type: "integer" }, headline: str, headline_ko: str, summary_en: str, summary_ko: str, vocab: VOCAB, glossary: VOCAB }) } }),
+    schema: obj({ news: { type: "array", items: obj({ id: { type: "integer" }, headline: str, headline_ko: str, summary_en: str, summary_ko: str, background_ko: str, vocab: VOCAB, glossary: VOCAB }) } }),
   });
 
   return chosen.map((c) => {
     const n = news.find((x) => x.id === c.id);
     if (!n) throw new Error("요약 누락: " + c.title);
-    return { source: c.source, url: c.url, published: c.published, original_title: c.title, headline: n.headline, headline_ko: n.headline_ko, summary_en: n.summary_en, summary_ko: n.summary_ko, vocab: n.vocab, glossary: n.glossary };
+    return { source: c.source, url: c.url, published: c.published, original_title: c.title, headline: n.headline, headline_ko: n.headline_ko, summary_en: n.summary_en, summary_ko: n.summary_ko, background_ko: n.background_ko, vocab: n.vocab, glossary: n.glossary };
   });
 }
 
@@ -205,7 +214,24 @@ async function makeResolution() {
   const list = await latestResolutions();
   for (const r of list) {
     const file = path.join(DATA, "resolutions", fileOf(r.symbol));
-    if (fs.existsSync(file)) return r.symbol; // 이미 만든 최신 결의문 → 그대로 사용
+    if (fs.existsSync(file)) {
+      // 이미 만든 최신 결의문 → 그대로 사용 (예전 파일에 배경지식이 없으면 그것만 채움)
+      const saved = JSON.parse(fs.readFileSync(file, "utf8"));
+      if (!saved.background_ko) {
+        const { background_ko } = await ask({
+          system: "You explain UN resolutions to Korean learners.",
+          prompt:
+            `Resolution ${saved.symbol}: ${saved.title}${saved.subtitle ? " — " + saved.subtitle : ""} (${saved.body}, adopted ${saved.adopted})\n` +
+            "Return:\n" + BG_RES + "\nPreambular paragraphs for reference:\n" +
+            saved.paragraphs.map((p) => p.en).join("\n\n").slice(0, 12000),
+          schema: obj({ background_ko: str }),
+          maxTokens: 4000,
+        });
+        fs.writeFileSync(file, JSON.stringify({ ...saved, background_ko }, null, 2));
+        console.log("배경지식 추가:", saved.symbol);
+      }
+      return r.symbol;
+    }
     const tmp = path.join(ROOT, ".tmp.pdf");
     fs.writeFileSync(tmp, await get(r.pdf_url, true));
     const text = execFileSync("pdftotext", [tmp, "-"]).toString();
@@ -224,12 +250,14 @@ async function makeResolution() {
         "- n: same number\n- lead: the opening participle/phrase exactly as it starts the paragraph (e.g. 'Reaffirming', 'Expressing deep concern', 'Recognizing also')\n" +
         "- ko: faithful Korean translation of the whole paragraph\n\n" +
         "Also return:\n- topic_en: what this resolution is about, short English line (e.g. 'Children and armed conflict: digital technologies')\n- topic_ko: the same in Korean\n" +
+        BG_RES +
         "- vocab: 6-10 typical UN expressions used in these paragraphs (en exactly as written, ko meaning)\n" +
         "- glossary: EVERY word or phrase in the paragraphs that a Korean B2 learner might look up (en exactly as written, ko = short meaning in this context)\n\n" +
         pre.paragraphs.map((p, i) => `[${i + 1}] ${p}`).join("\n\n"),
       schema: obj({
         topic_en: str,
         topic_ko: str,
+        background_ko: str,
         paragraphs: { type: "array", items: obj({ n: { type: "integer" }, lead: str, ko: str }) },
         vocab: VOCAB,
         glossary: VOCAB,
@@ -248,7 +276,7 @@ async function makeResolution() {
     const body = /^S\//.test(r.symbol) ? "Security Council" : "General Assembly";
     fs.writeFileSync(
       file,
-      JSON.stringify({ ...r, body, opening: pre.opening, topic_en: res.topic_en, topic_ko: res.topic_ko, paragraphs, vocab: res.vocab, glossary: res.glossary }, null, 2)
+      JSON.stringify({ ...r, body, opening: pre.opening, topic_en: res.topic_en, topic_ko: res.topic_ko, background_ko: res.background_ko, paragraphs, vocab: res.vocab, glossary: res.glossary }, null, 2)
     );
     console.log("새 결의문:", r.symbol, paragraphs.length + "문단");
     return r.symbol;
