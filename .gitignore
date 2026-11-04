@@ -1,0 +1,4 @@
+node_modules
+.tmp.pdf
+.DS_Store
+.env

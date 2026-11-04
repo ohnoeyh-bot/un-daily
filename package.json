@@ -1,0 +1,12 @@
+{
+  "name": "un-daily",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "check": "node scripts/update.mjs --check"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0"
+  }
+}

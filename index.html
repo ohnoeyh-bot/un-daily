@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UN Daily</title>
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171c" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="UN Daily">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f3ec; --paper: #fffdf8; --ink: #1d2128; --muted: #6b6f78; --line: #e4dfd3;
+  --accent: #0b6fa4; --accent-soft: #e3f0f7; --ko: #3d5a4a; --ko-bg: #eef4ee;
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: Inter, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c; --paper: #1c2027; --ink: #e9e6df; --muted: #9a9ea8; --line: #2c313a;
+    --accent: #5db7e8; --accent-soft: #1d3140; --ko: #a8cfb6; --ko-bg: #1f2b25;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans);
+  font-size: 16px; line-height: 1.55; padding-bottom: env(safe-area-inset-bottom);
+}
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+a { color: var(--accent); }
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 16px 48px; }
+
+/* 머리 */
+header {
+  position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line); padding-top: env(safe-area-inset-top);
+}
+.bar { max-width: 640px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 8px; }
+.brand { font-family: var(--serif); font-weight: 600; font-size: 19px; letter-spacing: .01em; margin-right: auto; }
+.brand b { color: var(--accent); font-weight: 600; }
+.datenav { display: flex; align-items: center; gap: 2px; }
+.datenav button { width: 36px; height: 36px; border-radius: 10px; font-size: 18px; }
+.datenav button:disabled { opacity: .25; cursor: default; }
+.datenav button:not(:disabled):active { background: var(--line); }
+.datebtn { width: auto !important; padding: 0 10px; font-size: 14px !important; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+h2.sec {
+  font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+  font-weight: 600; margin: 28px 0 12px; display: flex; align-items: center; gap: 10px;
+}
+h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+/* 뉴스 카드 */
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 12px; margin-bottom: 12px; }
+.meta { font-size: 12px; color: var(--muted); display: flex; gap: 6px; align-items: center; margin-bottom: 6px; }
+.num { font-family: var(--serif); font-size: 13px; font-weight: 600; color: var(--accent); }
+.card h3 { font-size: 18px; line-height: 1.35; margin: 0 0 8px; font-weight: 700; letter-spacing: -.01em; }
+.card p.en { margin: 0; font-size: 16px; }
+.tools { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+.chip {
+  font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line);
+  color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
+}
+.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.ko { background: var(--ko-bg); color: var(--ko); border-radius: 10px; padding: 10px 12px; margin-top: 10px; font-size: 15px; }
+.vocab { margin: 10px 0 0; padding: 0; list-style: none; border-top: 1px dashed var(--line); }
+.vocab li { display: flex; gap: 12px; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
+.vocab li b { font-weight: 600; flex: 0 0 46%; }
+.vocab li span { color: var(--muted); }
+[hidden] { display: none !important; }
+
+/* 결의문 */
+.res { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 20px 18px; }
+.symbol { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .04em; color: var(--accent); background: var(--accent-soft); padding: 3px 9px; border-radius: 6px; }
+.res h3 { font-family: var(--serif); font-size: 21px; line-height: 1.3; margin: 10px 0 2px; font-weight: 600; }
+.res .topic-ko { color: var(--muted); font-size: 14px; margin: 0; }
+.res .adopted { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+.res-tools { display: flex; gap: 6px; margin: 14px 0 6px; flex-wrap: wrap; }
+.opening { font-family: var(--serif); font-size: 18px; margin: 18px 0 10px; }
+.para { display: block; width: 100%; text-align: left; padding: 10px 0 10px 14px; border-left: 2px solid var(--line); margin: 0 0 6px; }
+.para .en { font-family: var(--serif); font-size: 17px; line-height: 1.6; }
+.para .en i { font-style: italic; font-weight: 600; }
+.para .ko { font-family: var(--sans); }
+.para[aria-expanded="true"] { border-left-color: var(--accent); }
+.hint { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+.res .vocab { margin-top: 18px; }
+.res .vocab li b { font-family: var(--serif); font-style: italic; }
+
+/* 지난 날짜 */
+.archive { list-style: none; margin: 0; padding: 0; }
+.archive li button { width: 100%; text-align: left; padding: 14px 4px; border-bottom: 1px solid var(--line); display: block; }
+.archive .d { font-weight: 700; font-variant-numeric: tabular-nums; }
+.archive .d small { color: var(--accent); font-weight: 600; margin-left: 8px; }
+.archive .h { font-size: 13px; color: var(--muted); margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+.empty { color: var(--muted); text-align: center; padding: 60px 0; }
+footer { text-align: center; font-size: 12px; color: var(--muted); margin-top: 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">UN <b>Daily</b></div>
+    <div class="datenav">
+      <button id="prev" aria-label="이전 날짜">‹</button>
+      <button id="datebtn" class="datebtn" aria-label="지난 날짜 목록"></button>
+      <button id="next" aria-label="다음 날짜">›</button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="app"><p class="empty">불러오는 중…</p></main>
+
+<script>
+const app = document.getElementById("app");
+let index = [];
+let current = null;
+
+const esc = (s = "") => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtDate = (d) => {
+  const [y, m, day] = d.split("-").map(Number);
+  const w = "일월화수목금토"[new Date(y, m - 1, day).getDay()];
+  return `${m}월 ${day}일 (${w})`;
+};
+const ago = (iso) => {
+  const h = Math.round((Date.now() - new Date(iso)) / 3600e3);
+  return h < 1 ? "방금" : h < 24 ? `${h}시간 전` : `${Math.round(h / 24)}일 전`;
+};
+async function getJSON(url) {
+  const r = await fetch(url, { cache: "no-cache" });
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
+function vocabList(v) {
+  return `<ul class="vocab">${v.map((x) => `<li><b>${esc(x.en)}</b><span>${esc(x.ko)}</span></li>`).join("")}</ul>`;
+}
+
+function newsCard(n, i) {
+  return `<article class="card">
+    <div class="meta"><span class="num">${String(i + 1).padStart(2, "0")}</span>·<span>${esc(n.source)}</span>·<span>${ago(n.published)}</span></div>
+    <h3>${esc(n.headline)}</h3>
+    <p class="en">${esc(n.summary_en)}</p>
+    <div class="ko" hidden>${esc(n.summary_ko)}</div>
+    <div hidden data-v>${vocabList(n.vocab)}</div>
+    <div class="tools">
+      <button class="chip" data-toggle="ko" aria-pressed="false">해석</button>
+      <button class="chip" data-toggle="v" aria-pressed="false">어휘 ${n.vocab.length}</button>
+      <a class="chip" href="${esc(n.url)}" target="_blank" rel="noopener">원문 ↗</a>
+    </div>
+  </article>`;
+}
+
+function resolutionView(r) {
+  const paras = r.paragraphs.map((p, i) => {
+    const rest = p.en.slice(p.lead.length);
+    return `<button class="para" aria-expanded="false" data-i="${i}">
+      <div class="en"><i>${esc(p.lead)}</i>${esc(rest)}</div>
+      <div class="ko" hidden>${esc(p.ko)}</div>
+    </button>`;
+  }).join("");
+  return `<section class="res">
+    <span class="symbol">${esc(r.symbol)}</span>
+    <h3>${esc(r.topic_en || r.title)}</h3>
+    <p class="topic-ko">${esc(r.topic_ko || "")}</p>
+    <p class="adopted">${esc(r.body)} · ${esc(r.adopted)} 채택 · 서문 ${r.paragraphs.length}문단</p>
+    <div class="res-tools">
+      <button class="chip" id="allko" aria-pressed="false">해석 모두 보기</button>
+      <a class="chip" href="${esc(r.pdf_url)}" target="_blank" rel="noopener">원문 PDF ↗</a>
+    </div>
+    <p class="opening"><i>${esc(r.opening)}</i></p>
+    <p class="hint">문단을 누르면 해석이 나와요</p>
+    ${paras}
+    <h2 class="sec">UN 표현</h2>
+    ${vocabList(r.vocab)}
+  </section>`;
+}
+
+async function showDay(date) {
+  current = date;
+  location.hash = date;
+  const pos = index.findIndex((d) => d.date === date);
+  document.getElementById("prev").disabled = pos >= index.length - 1;
+  document.getElementById("next").disabled = pos <= 0;
+  document.getElementById("datebtn").textContent = fmtDate(date);
+  app.innerHTML = `<p class="empty">불러오는 중…</p>`;
+  try {
+    const day = await getJSON(`data/days/${date}.json`);
+    let resHtml = `<p class="empty">결의문을 불러오지 못했어요</p>`;
+    if (day.resolution) {
+      const file = day.resolution.replace(/[^A-Za-z0-9]+/g, "_").replace(/_$/, "") + ".json";
+      try { resHtml = resolutionView(await getJSON(`data/resolutions/${file}`)); } catch {}
+    }
+    app.innerHTML = `
+      <h2 class="sec">Today's News</h2>
+      ${day.news.map(newsCard).join("") || `<p class="empty">뉴스가 없어요</p>`}
+      <h2 class="sec">UN Resolution · Preamble</h2>
+      ${resHtml}
+      <footer>매일 오전 6시 업데이트 · 요약과 해석은 AI가 작성</footer>`;
+    window.scrollTo(0, 0);
+  } catch {
+    app.innerHTML = `<p class="empty">이 날짜의 자료를 불러오지 못했어요</p>`;
+  }
+}
+
+function showArchive() {
+  current = null;
+  location.hash = "archive";
+  document.getElementById("prev").disabled = true;
+  document.getElementById("next").disabled = true;
+  document.getElementById("datebtn").textContent = "지난 날짜";
+  app.innerHTML = `<h2 class="sec">Archive</h2><ul class="archive">${index.map((d, i) => `
+    <li><button data-date="${d.date}">
+      <div class="d">${fmtDate(d.date)}${i === 0 ? "<small>최신</small>" : ""}</div>
+      <div class="h">${esc(d.headlines.join(" · "))}${d.resolution ? " · " + esc(d.resolution) : ""}</div>
+    </button></li>`).join("")}</ul>`;
+}
+
+app.addEventListener("click", (e) => {
+  const t = e.target.closest("[data-toggle], .para, #allko, [data-date]");
+  if (!t) return;
+  if (t.dataset.date) return showDay(t.dataset.date);
+  if (t.id === "allko") {
+    const on = t.getAttribute("aria-pressed") !== "true";
+    t.setAttribute("aria-pressed", on);
+    app.querySelectorAll(".para").forEach((p) => { p.setAttribute("aria-expanded", on); p.querySelector(".ko").hidden = !on; });
+    return;
+  }
+  if (t.classList.contains("para")) {
+    const on = t.getAttribute("aria-expanded") !== "true";
+    t.setAttribute("aria-expanded", on);
+    t.querySelector(".ko").hidden = !on;
+    return;
+  }
+  const card = t.closest(".card");
+  const on = t.getAttribute("aria-pressed") !== "true";
+  t.setAttribute("aria-pressed", on);
+  card.querySelector(t.dataset.toggle === "ko" ? ".ko" : "[data-v]").hidden = !on;
+});
+
+document.getElementById("prev").onclick = () => { const i = index.findIndex((d) => d.date === current); if (index[i + 1]) showDay(index[i + 1].date); };
+document.getElementById("next").onclick = () => { const i = index.findIndex((d) => d.date === current); if (i > 0) showDay(index[i - 1].date); };
+document.getElementById("datebtn").onclick = () => (current ? showArchive() : index[0] && showDay(index[0].date));
+
+(async () => {
+  try { index = await getJSON("data/index.json"); } catch { index = []; }
+  if (!index.length) { app.innerHTML = `<p class="empty">아직 자료가 없어요</p>`; return; }
+  const h = location.hash.slice(1);
+  if (h === "archive") showArchive();
+  else showDay(index.some((d) => d.date === h) ? h : index[0].date);
+})();
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>

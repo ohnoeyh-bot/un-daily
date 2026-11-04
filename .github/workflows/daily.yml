@@ -1,0 +1,53 @@
+name: daily-update
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 매일 한국시간 오전 6시
+  workflow_dispatch:        # 수동 실행 버튼
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 준비
+        run: |
+          sudo apt-get install -y poppler-utils > /dev/null
+          npm ci
+      - name: 뉴스·결의문 만들기
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/update.mjs
+      - name: 저장(커밋)
+        if: always() && github.event_name != 'push'
+        run: |
+          git config user.name "un-daily-bot"
+          git config user.email "un-daily-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "data: $(TZ=Asia/Seoul date +%F)" && git push)
+      - name: 사이트 파일 모으기
+        if: always()
+        run: |
+          mkdir -p _site
+          cp -r index.html sw.js manifest.webmanifest icon-192.png icon-512.png data _site/
+      - uses: actions/upload-pages-artifact@v3
+        if: always()
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        if: always()
