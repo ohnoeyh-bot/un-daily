@@ -105,14 +105,21 @@ h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 /* 단어장 */
 .wbtn { font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 .para { -webkit-user-select: text; user-select: text; cursor: pointer; }
-#addword {
-  position: fixed; z-index: 20; display: none; transform: translateX(-50%);
-  background: var(--accent); color: #fff; font-size: 14px; font-weight: 600;
-  padding: 9px 14px; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.25); white-space: nowrap;
+/* 단어 선택 시 화면 아래 고정 막대 */
+#selbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  background: var(--paper); border-top: 1px solid var(--line); box-shadow: 0 -8px 24px rgba(0,0,0,.18);
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  transform: translateY(110%); transition: transform .18s ease-out;
 }
-#addword small { font-weight: 400; opacity: .85; margin-left: 6px; }
+#selbar.show { transform: none; }
+#selbar .in { max-width: 640px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+#selbar .txt { flex: 1; min-width: 0; }
+#selbar .sw { font-family: var(--serif); font-size: 18px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#selbar .sk { font-size: 14px; color: var(--ko); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#addword { background: var(--accent); color: #fff; font-size: 15px; font-weight: 600; padding: 11px 16px; border-radius: 12px; white-space: nowrap; }
 #toast {
-  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%);
+  position: fixed; left: 50%; bottom: calc(96px + env(safe-area-inset-bottom)); transform: translateX(-50%);
   background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; border-radius: 12px;
   opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 30; white-space: nowrap;
 }
@@ -149,7 +156,10 @@ footer { text-align: center; font-size: 12px; color: var(--muted); margin-top: 3
     </div>
   </div>
 </header>
-<button id="addword">＋ 단어장<small></small></button>
+<div id="selbar"><div class="in">
+  <div class="txt"><div class="sw"></div><div class="sk"></div></div>
+  <button id="addword">＋ 단어장</button>
+</div></div>
 <div id="toast"></div>
 <main class="wrap" id="app"><p class="empty">불러오는 중…</p></main>
 
@@ -300,6 +310,8 @@ function lookup(word) {
   const k = norm(word);
   if (glossary.has(k)) return glossary.get(k);
   for (const [g, ko] of glossary) if (stem(g) === stem(k) && !g.includes(" ") === !k.includes(" ")) return ko;
+  // 단어가 풀이된 구 안에 들어 있으면 그 구의 뜻 (예: peacekeeping → peacekeeping mission)
+  for (const [g, ko] of glossary) if (g.split(" ").some((x) => x === k || stem(x) === stem(k))) return `${ko} (${g})`;
   return "";
 }
 function toast(msg) {
@@ -309,6 +321,8 @@ function toast(msg) {
 }
 
 const addBtn = document.getElementById("addword");
+const selbar = document.getElementById("selbar");
+const hideBar = () => { selbar.classList.remove("show"); picked = null; };
 let picked = null;
 function sentenceOf(text, word) {
   const parts = text.replace(/\s+/g, " ").match(/[^.!?]+[.!?]*[”"']?/g) || [text];
@@ -320,17 +334,14 @@ function checkSelection() {
   const host = sel.anchorNode && (sel.anchorNode.nodeType === 1 ? sel.anchorNode : sel.anchorNode.parentElement);
   const block = host && host.closest(".en, .card h3, .opening");
   if (!word || word.length > 60 || !/[A-Za-z]/.test(word) || !block || !sel.rangeCount) {
-    addBtn.style.display = "none"; picked = null; return;
+    hideBar(); return;
   }
   const src = block.closest("[data-src]");
   picked = { word, ctx: sentenceOf(block.textContent, word), src: src ? src.dataset.src : "", date: current };
   const ko = lookup(word);
-  addBtn.querySelector("small").textContent = ko ? ko.slice(0, 18) : "";
-  const r = sel.getRangeAt(0).getBoundingClientRect();
-  const x = Math.min(Math.max(r.left + r.width / 2, 90), innerWidth - 90);
-  let y = r.bottom + 34;
-  if (y > innerHeight - 70) y = r.top - 60;
-  addBtn.style.left = x + "px"; addBtn.style.top = y + "px"; addBtn.style.display = "block";
+  selbar.querySelector(".sw").textContent = word;
+  selbar.querySelector(".sk").textContent = ko || "뜻은 단어장에서 적을 수 있어요";
+  selbar.classList.add("show");
 }
 document.addEventListener("selectionchange", () => { clearTimeout(checkSelection.t); checkSelection.t = setTimeout(checkSelection, 200); });
 addBtn.addEventListener("pointerdown", (e) => e.preventDefault()); // 선택이 풀리지 않게
@@ -343,14 +354,14 @@ addBtn.addEventListener("click", () => {
     saveWords(list);
     toast(`‘${picked.word}’ 추가했어요`);
   }
-  addBtn.style.display = "none";
+  hideBar();
   getSelection().removeAllRanges();
 });
 
 function showWords() {
   current = null;
   location.hash = "words";
-  addBtn.style.display = "none";
+  hideBar();
   document.getElementById("prev").disabled = true;
   document.getElementById("next").disabled = true;
   document.getElementById("datebtn").textContent = "← 오늘";
