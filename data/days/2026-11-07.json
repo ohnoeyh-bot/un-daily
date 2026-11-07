@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-07",
+  "news": [
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island?traffic_source=rss",
+      "published": "2026-11-07T03:53:01.000Z",
+      "original_title": "Trump confirms new US strikes on Iran’s Qeshm Island",
+      "headline": "Trump confirms new US strikes on Iran's Qeshm Island",
+      "headline_ko": "트럼프, 이란 케심섬에 대한 미국의 새 공습 확인",
+      "summary_en": "US President Donald Trump confirmed what he called minor strikes on Iranian air defence systems on Qeshm Island in the Strait of Hormuz. He also claimed \"a lot of progress\" in talks with Tehran. Iran said it shot down a US drone, while Qatar said mediation efforts remain active.",
+      "summary_ko": "도널드 트럼프 미국 대통령은 호르무즈 해협의 케심섬에 있는 이란 방공 시스템에 대해 자신이 '소규모'라고 표현한 공습을 확인했다. 그는 또한 이란과의 협상에서 '많은 진전'이 있었다고 주장했다. 이란은 미국 드론을 격추했다고 밝혔고, 카타르는 중재 노력이 계속되고 있다고 말했다.",
+      "background_ko": "호르무즈 해협은 페르시아만과 바다를 잇는 좁은 바닷길로, 전 세계 원유의 상당 부분이 이곳을 지나가요. 그래서 이 지역에서 충돌이 생기면 국제 유가와 세계 경제가 크게 흔들릴 수 있어요. 카타르는 걸프 지역의 작은 나라지만 여러 분쟁에서 중재자 역할을 자주 맡아 왔어요.",
+      "vocab": [
+        {
+          "en": "confirmed",
+          "ko": "확인했다"
+        },
+        {
+          "en": "air defence systems",
+          "ko": "방공 시스템"
+        },
+        {
+          "en": "mediation efforts",
+          "ko": "중재 노력"
+        },
+        {
+          "en": "shot down",
+          "ko": "격추했다"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "confirms",
+          "ko": "확인하다"
+        },
+        {
+          "en": "strikes",
+          "ko": "공습"
+        },
+        {
+          "en": "minor",
+          "ko": "소규모의, 사소한"
+        },
+        {
+          "en": "air defence systems",
+          "ko": "방공 시스템"
+        },
+        {
+          "en": "Strait of Hormuz",
+          "ko": "호르무즈 해협"
+        },
+        {
+          "en": "claimed",
+          "ko": "주장했다"
+        },
+        {
+          "en": "progress",
+          "ko": "진전"
+        },
+        {
+          "en": "talks",
+          "ko": "협상"
+        },
+        {
+          "en": "Tehran",
+          "ko": "테헤란(이란 정부)"
+        },
+        {
+          "en": "shot down",
+          "ko": "격추했다"
+        },
+        {
+          "en": "drone",
+          "ko": "무인기, 드론"
+        },
+        {
+          "en": "mediation efforts",
+          "ko": "중재 노력"
+        },
+        {
+          "en": "remain active",
+          "ko": "계속 진행 중이다"
+        }
+      ]
+    },
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168753",
+      "published": "2026-11-06T12:00:00.000Z",
+      "original_title": "Sudan’s suffering is plain for all to see say aid teams, as brutal war continues",
+      "headline": "Aid agencies appeal for funds as Sudan's displacement crisis worsens",
+      "headline_ko": "수단 난민 위기 심화 속 구호기관들 자금 지원 호소",
+      "summary_en": "UN aid agencies IOM and UNHCR appealed for more international help for Sudan, where 15.4 million people urgently need shelter. Funding shortages mean they can assist only about one in ten people in need, and warehouses are empty. Only 47 per cent of the $2.9 billion humanitarian plan has been funded.",
+      "summary_ko": "유엔 구호기관인 국제이주기구(IOM)와 유엔난민기구(UNHCR)는 1,540만 명이 긴급히 거처를 필요로 하는 수단에 대해 국제사회의 추가 지원을 호소했다. 자금 부족으로 도움이 필요한 사람 10명 중 약 1명만 지원할 수 있으며, 창고는 비어 있다. 29억 달러 규모의 인도적 지원 계획 중 47%만 자금이 확보됐다.",
+      "background_ko": "수단은 아프리카 북동부에 있는 나라로, 2023년 4월부터 정부군과 신속지원군(RSF)이라는 두 군사 세력이 권력을 두고 내전을 벌이고 있어요. 이 전쟁으로 수많은 사람이 집을 잃고 피란을 떠나, 세계 최대 규모의 실향민 위기가 됐어요. IOM은 이주민을, UNHCR은 난민을 돕는 유엔 기구예요.",
+      "vocab": [
+        {
+          "en": "appealed for",
+          "ko": "~을 호소했다"
+        },
+        {
+          "en": "urgently",
+          "ko": "긴급히"
+        },
+        {
+          "en": "funding shortages",
+          "ko": "자금 부족"
+        },
+        {
+          "en": "in need",
+          "ko": "도움이 필요한"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "Aid agencies",
+          "ko": "구호기관"
+        },
+        {
+          "en": "appeal for",
+          "ko": "~을 호소하다"
+        },
+        {
+          "en": "funds",
+          "ko": "자금"
+        },
+        {
+          "en": "displacement crisis",
+          "ko": "실향민(피란) 위기"
+        },
+        {
+          "en": "worsens",
+          "ko": "악화되다"
+        },
+        {
+          "en": "appealed for",
+          "ko": "~을 호소했다"
+        },
+        {
+          "en": "urgently",
+          "ko": "긴급히"
+        },
+        {
+          "en": "shelter",
+          "ko": "거처, 대피처"
+        },
+        {
+          "en": "funding shortages",
+          "ko": "자금 부족"
+        },
+        {
+          "en": "assist",
+          "ko": "돕다"
+        },
+        {
+          "en": "in need",
+          "ko": "도움이 필요한"
+        },
+        {
+          "en": "warehouses",
+          "ko": "창고"
+        },
+        {
+          "en": "humanitarian plan",
+          "ko": "인도적 지원 계획"
+        },
+        {
+          "en": "funded",
+          "ko": "자금이 지원된"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2835 (2026)"
+}
