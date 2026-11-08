@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-08",
+  "news": [
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss",
+      "published": "2026-11-07T20:26:58.000Z",
+      "original_title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+      "headline": "Israel's president asks Eisenkot, not Netanyahu, to form government",
+      "headline_ko": "이스라엘 대통령, 네타냐후 대신 아이젠코트에게 정부 구성 맡겨",
+      "summary_en": "President Isaac Herzog has tasked former army chief Gadi Eisenkot with forming Israel's next government after 67 lawmakers endorsed him. Eisenkot has 28 days, with a possible extension, to build a coalition of at least 61 Knesset seats. He has ruled out governing with Arab-led parties.",
+      "summary_ko": "이삭 헤르초그 대통령이 의원 67명의 지지를 받은 전 군 참모총장 가디 아이젠코트에게 이스라엘 차기 정부 구성을 맡겼다. 아이젠코트는 28일(연장 가능) 안에 크네세트 최소 61석의 연립을 구성해야 한다. 그는 아랍계 정당과의 연정은 배제했다.",
+      "background_ko": "이스라엘은 의원내각제 국가라서 총선에서 한 정당이 과반을 얻기 어려워 여러 정당이 연립정부를 만들어요. 대통령은 실권은 적지만 누가 정부를 구성할지 지명하는 역할을 해요. 네타냐후는 이스라엘 역사상 가장 오래 총리를 지낸 인물이에요.",
+      "vocab": [
+        {
+          "en": "task with",
+          "ko": "~을 맡기다"
+        },
+        {
+          "en": "endorse",
+          "ko": "지지하다"
+        },
+        {
+          "en": "rule out",
+          "ko": "배제하다"
+        },
+        {
+          "en": "coalition",
+          "ko": "연립정부"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "form government",
+          "ko": "정부를 구성하다"
+        },
+        {
+          "en": "tasked",
+          "ko": "임무를 맡겼다"
+        },
+        {
+          "en": "former army chief",
+          "ko": "전 군 참모총장"
+        },
+        {
+          "en": "lawmakers",
+          "ko": "의원들"
+        },
+        {
+          "en": "endorsed",
+          "ko": "지지했다"
+        },
+        {
+          "en": "extension",
+          "ko": "연장"
+        },
+        {
+          "en": "coalition",
+          "ko": "연립"
+        },
+        {
+          "en": "Knesset",
+          "ko": "이스라엘 의회"
+        },
+        {
+          "en": "seats",
+          "ko": "의석"
+        },
+        {
+          "en": "ruled out",
+          "ko": "배제했다"
+        },
+        {
+          "en": "governing",
+          "ko": "통치하다"
+        },
+        {
+          "en": "Arab-led parties",
+          "ko": "아랍계 주도 정당"
+        }
+      ]
+    },
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-07T12:49:36.000Z",
+      "original_title": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
+      "headline": "Russian strikes injure nine and hit Ukraine's power grid before talks",
+      "headline_ko": "회담 앞두고 러시아 공습으로 9명 부상, 우크라이나 전력망 피해",
+      "summary_en": "Overnight Russian attacks with more than 30 ballistic missiles and over 170 drones hit 12 Ukrainian regions, injuring nine people and causing blackouts and water disruptions. Kyiv was hit hardest. The strikes came before trilateral talks with Russian and Ukrainian delegations in Abu Dhabi next week.",
+      "summary_ko": "러시아가 밤사이 탄도미사일 30여 발과 드론 170여 대로 우크라이나 12개 지역을 공격해 9명이 다치고 정전과 단수가 발생했다. 수도 키이우의 피해가 가장 컸다. 이번 공격은 다음 주 아부다비에서 러시아·우크라이나 대표단이 참여하는 3자 회담을 앞두고 이뤄졌다.",
+      "background_ko": "러시아는 2022년 2월 우크라이나를 전면 침공했고, 전쟁이 지금까지 이어지고 있어요. 러시아는 특히 겨울철에 발전소와 변전소 같은 에너지 시설을 자주 공격해 시민들이 난방과 전기 없이 지내게 만들어요.",
+      "vocab": [
+        {
+          "en": "overnight",
+          "ko": "밤사이"
+        },
+        {
+          "en": "blackout",
+          "ko": "정전"
+        },
+        {
+          "en": "disruption",
+          "ko": "중단, 차질"
+        },
+        {
+          "en": "delegation",
+          "ko": "대표단"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "strikes",
+          "ko": "공습"
+        },
+        {
+          "en": "injure",
+          "ko": "다치게 하다"
+        },
+        {
+          "en": "power grid",
+          "ko": "전력망"
+        },
+        {
+          "en": "Overnight",
+          "ko": "밤사이"
+        },
+        {
+          "en": "ballistic missiles",
+          "ko": "탄도미사일"
+        },
+        {
+          "en": "drones",
+          "ko": "드론"
+        },
+        {
+          "en": "regions",
+          "ko": "지역"
+        },
+        {
+          "en": "blackouts",
+          "ko": "정전"
+        },
+        {
+          "en": "water disruptions",
+          "ko": "단수, 급수 차질"
+        },
+        {
+          "en": "hit hardest",
+          "ko": "가장 큰 피해를 입은"
+        },
+        {
+          "en": "trilateral talks",
+          "ko": "3자 회담"
+        },
+        {
+          "en": "delegations",
+          "ko": "대표단"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2835 (2026)"
+}
