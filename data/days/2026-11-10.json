@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-10",
+  "news": [
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T00:09:49.000Z",
+      "original_title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+      "headline": "US says Russia and Ukraine show some flexibility as talks resume",
+      "headline_ko": "미국 \"러시아·우크라이나, 회담 재개 앞두고 다소 유연성 보여\"",
+      "summary_en": "Senior officials from the US, Russia and Ukraine are meeting in Abu Dhabi for the first trilateral peace talks since February. US officials say both sides are privately showing some flexibility over control of eastern Ukraine, but a deal on Donetsk depends on agreeing a postwar security architecture.",
+      "summary_ko": "미국, 러시아, 우크라이나 고위 관리들이 2월 이후 처음으로 열리는 3자 평화회담을 위해 아부다비에서 만난다. 미국 관리들은 양측이 우크라이나 동부 지역 통제 문제에 대해 비공개적으로 다소 유연성을 보이고 있다고 말했지만, 도네츠크 문제의 합의는 전후 안보 체제에 대한 합의에 달려 있다.",
+      "background_ko": "러시아는 2022년 2월 우크라이나를 전면 침공했고, 그 뒤로 전쟁이 계속되고 있어요. 도네츠크는 우크라이나 동부의 공업 지역으로, 2014년부터 친러 세력과의 분쟁이 이어진 곳이에요. 나토(NATO)는 미국과 유럽 국가들의 군사 동맹인데, 러시아는 나토가 동쪽으로 확장하는 것을 오래전부터 반대해 왔어요.",
+      "vocab": [
+        {
+          "en": "flexibility",
+          "ko": "유연성"
+        },
+        {
+          "en": "trilateral",
+          "ko": "3자 간의"
+        },
+        {
+          "en": "depends on",
+          "ko": "~에 달려 있다"
+        },
+        {
+          "en": "postwar",
+          "ko": "전후의"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "flexibility",
+          "ko": "유연성"
+        },
+        {
+          "en": "resume",
+          "ko": "재개되다"
+        },
+        {
+          "en": "Senior officials",
+          "ko": "고위 관리들"
+        },
+        {
+          "en": "trilateral",
+          "ko": "3자 간의"
+        },
+        {
+          "en": "peace talks",
+          "ko": "평화회담"
+        },
+        {
+          "en": "privately",
+          "ko": "비공개적으로"
+        },
+        {
+          "en": "control",
+          "ko": "통제, 지배"
+        },
+        {
+          "en": "eastern Ukraine",
+          "ko": "우크라이나 동부"
+        },
+        {
+          "en": "deal",
+          "ko": "합의"
+        },
+        {
+          "en": "depends on",
+          "ko": "~에 달려 있다"
+        },
+        {
+          "en": "agreeing",
+          "ko": "합의하는 것"
+        },
+        {
+          "en": "postwar",
+          "ko": "전후의"
+        },
+        {
+          "en": "security architecture",
+          "ko": "안보 체제"
+        }
+      ]
+    },
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168763",
+      "published": "2026-11-09T12:00:00.000Z",
+      "original_title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+      "headline": "COP31 climate summit opens in Antalya, aiming for concrete action",
+      "headline_ko": "COP31 기후 정상회의 안탈리아서 개막, 구체적 행동 목표",
+      "summary_en": "Nearly 200 countries have gathered in Antalya, Türkiye, for the COP31 climate summit, which focuses on turning existing commitments into action. UN climate chief Simon Stiell said progress was not far or fair enough. Finance is expected to be among the toughest issues, as developing countries seek faster access to funding.",
+      "summary_ko": "약 200개국이 COP31 기후 정상회의를 위해 튀르키예 안탈리아에 모였으며, 이번 회의는 기존 약속을 행동으로 옮기는 데 초점을 맞추고 있다. 사이먼 스티엘 유엔 기후 책임자는 진전이 충분히 멀리 나아가지도, 공정하지도 않다고 말했다. 개발도상국들이 더 빠른 자금 지원을 요구하면서 재원 문제가 가장 어려운 쟁점 중 하나가 될 것으로 예상된다.",
+      "background_ko": "COP는 '당사국총회'라는 뜻으로, 유엔 기후변화협약에 가입한 나라들이 매년 모여 기후 문제를 논의하는 회의예요. 2015년 COP21에서 지구 온도 상승을 막자는 파리협정이 맺어졌어요. 개발도상국들은 기후 피해에 대응하려면 부유한 나라들의 재정 지원이 필요하다고 오랫동안 요구해 왔어요.",
+      "vocab": [
+        {
+          "en": "commitments",
+          "ko": "약속, 공약"
+        },
+        {
+          "en": "turning ... into action",
+          "ko": "~을 행동으로 옮기다"
+        },
+        {
+          "en": "toughest issues",
+          "ko": "가장 어려운 쟁점"
+        },
+        {
+          "en": "seek",
+          "ko": "추구하다, 요구하다"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "climate summit",
+          "ko": "기후 정상회의"
+        },
+        {
+          "en": "aiming for",
+          "ko": "~을 목표로 하는"
+        },
+        {
+          "en": "concrete",
+          "ko": "구체적인"
+        },
+        {
+          "en": "gathered",
+          "ko": "모였다"
+        },
+        {
+          "en": "focuses on",
+          "ko": "~에 초점을 맞추다"
+        },
+        {
+          "en": "existing",
+          "ko": "기존의"
+        },
+        {
+          "en": "commitments",
+          "ko": "약속, 공약"
+        },
+        {
+          "en": "progress",
+          "ko": "진전"
+        },
+        {
+          "en": "fair",
+          "ko": "공정한"
+        },
+        {
+          "en": "Finance",
+          "ko": "재원, 자금"
+        },
+        {
+          "en": "toughest",
+          "ko": "가장 어려운"
+        },
+        {
+          "en": "developing countries",
+          "ko": "개발도상국"
+        },
+        {
+          "en": "seek",
+          "ko": "요구하다"
+        },
+        {
+          "en": "access to funding",
+          "ko": "자금 접근"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2835 (2026)"
+}
