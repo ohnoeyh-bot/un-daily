@@ -1,0 +1,168 @@
+{
+  "date": "2026-11-11",
+  "news": [
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T21:21:55.000Z",
+      "original_title": "First day of Ukraine peace talks constructive, Zelensky says",
+      "headline": "Zelensky calls first day of Ukraine peace talks constructive",
+      "headline_ko": "젤렌스키 \"우크라이나 평화회담 첫날 건설적\"",
+      "summary_en": "Ukraine, Russia and the US held the first of two days of trilateral talks in Abu Dhabi aimed at ending the war. Zelensky called them \"constructive and quite substantive\", though the two sides remain far apart, especially over control of the eastern Donetsk region.",
+      "summary_ko": "우크라이나, 러시아, 미국이 전쟁 종식을 목표로 아부다비에서 이틀간의 3자 회담 중 첫날 회담을 열었다. 젤렌스키는 회담이 \"건설적이고 상당히 실질적\"이었다고 평가했지만, 양측은 특히 동부 도네츠크 지역의 통제권을 두고 여전히 입장 차가 크다.",
+      "background_ko": "러시아는 2022년 2월 우크라이나를 전면 침공했고, 그 뒤로 전쟁이 계속되고 있어. 도네츠크는 우크라이나 동부의 공업 지역인데, 러시아가 대부분을 점령하고 있어서 영토 문제의 핵심이야. 유럽은 이 전쟁이 자기 대륙의 안보와 직결된다고 보고 있어.",
+      "vocab": [
+        {
+          "en": "aimed at",
+          "ko": "~을 목표로 하는"
+        },
+        {
+          "en": "substantive",
+          "ko": "실질적인"
+        },
+        {
+          "en": "far apart",
+          "ko": "입장 차가 큰"
+        },
+        {
+          "en": "constructive",
+          "ko": "건설적인"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "constructive",
+          "ko": "건설적인"
+        },
+        {
+          "en": "peace talks",
+          "ko": "평화회담"
+        },
+        {
+          "en": "trilateral",
+          "ko": "3자간의"
+        },
+        {
+          "en": "aimed at",
+          "ko": "~을 목표로 하는"
+        },
+        {
+          "en": "substantive",
+          "ko": "실질적인"
+        },
+        {
+          "en": "remain",
+          "ko": "여전히 ~이다"
+        },
+        {
+          "en": "far apart",
+          "ko": "입장 차가 큰"
+        },
+        {
+          "en": "especially",
+          "ko": "특히"
+        },
+        {
+          "en": "control",
+          "ko": "통제권"
+        },
+        {
+          "en": "region",
+          "ko": "지역"
+        }
+      ]
+    },
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/11/ebola-cases-in-dr-congo-pass-11000-with-5387-deaths?traffic_source=rss",
+      "published": "2026-11-11T04:44:18.000Z",
+      "original_title": "Ebola cases in DR Congo pass 11,000, with 5,387 deaths",
+      "headline": "Ebola cases in DR Congo pass 11,000, with 5,387 deaths",
+      "headline_ko": "콩고민주공화국 에볼라 확진자 1만1천 명 넘어, 5,387명 사망",
+      "summary_en": "Confirmed Ebola cases in the Democratic Republic of the Congo have reached 11,042, with at least 5,387 deaths. Caused by the rare Bundibugyo strain, which has no specific vaccine or treatment, it is the second-largest Ebola outbreak on record. Delayed detection, conflict and strained health services have sped its spread.",
+      "summary_ko": "콩고민주공화국의 에볼라 확진자가 11,042명에 이르렀고, 최소 5,387명이 사망했다. 전용 백신이나 치료법이 없는 희귀한 분디부교 변종이 원인으로, 이번 발병은 기록상 두 번째로 큰 에볼라 유행이다. 늦은 감지, 분쟁, 열악한 보건 서비스로 확산이 빨라졌다.",
+      "background_ko": "에볼라는 고열과 출혈을 일으키는 치명적인 바이러스 질병으로, 감염자의 체액을 통해 퍼져. 콩고민주공화국은 아프리카 중부의 큰 나라로, 동부 지역에서 무장 분쟁이 오래 이어져 의료 대응이 어려워. 역대 최대 유행은 2014~2016년 서아프리카에서 있었어.",
+      "vocab": [
+        {
+          "en": "outbreak",
+          "ko": "(질병의) 발생, 유행"
+        },
+        {
+          "en": "strain",
+          "ko": "변종, 균주"
+        },
+        {
+          "en": "strained",
+          "ko": "부담이 큰, 한계에 달한"
+        },
+        {
+          "en": "on record",
+          "ko": "기록상"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "pass",
+          "ko": "넘어서다"
+        },
+        {
+          "en": "Confirmed",
+          "ko": "확진된"
+        },
+        {
+          "en": "at least",
+          "ko": "최소"
+        },
+        {
+          "en": "rare",
+          "ko": "희귀한"
+        },
+        {
+          "en": "strain",
+          "ko": "변종"
+        },
+        {
+          "en": "specific",
+          "ko": "특정한, 전용의"
+        },
+        {
+          "en": "vaccine",
+          "ko": "백신"
+        },
+        {
+          "en": "treatment",
+          "ko": "치료법"
+        },
+        {
+          "en": "outbreak",
+          "ko": "(질병의) 유행"
+        },
+        {
+          "en": "on record",
+          "ko": "기록상"
+        },
+        {
+          "en": "Delayed detection",
+          "ko": "늦은 감지"
+        },
+        {
+          "en": "conflict",
+          "ko": "분쟁"
+        },
+        {
+          "en": "strained",
+          "ko": "과부하된"
+        },
+        {
+          "en": "sped",
+          "ko": "가속했다"
+        },
+        {
+          "en": "spread",
+          "ko": "확산"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2835 (2026)"
+}
