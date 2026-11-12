@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-12",
+  "news": [
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168783",
+      "published": "2026-11-11T12:00:00.000Z",
+      "original_title": "‘Make or bake time’: Guterres urges climate justice pact as leaders gather at COP31",
+      "headline": "Guterres urges climate justice pact and taxes on fossil fuel firms",
+      "headline_ko": "구테흐스, 기후 정의 협약과 화석연료 기업 과세 촉구",
+      "summary_en": "At COP31 in Antalya, UN chief António Guterres called for a global climate justice agreement and urged governments to tax fossil fuel companies' windfall profits. He warned the planet is heading towards more than 2.5°C of warming, while leaders from Türkiye and Brazil said climate action was falling short.",
+      "summary_ko": "안탈리아에서 열린 COP31에서 안토니우 구테흐스 유엔 사무총장은 전 세계적인 기후 정의 협약을 촉구하고, 각국 정부에 화석연료 기업의 횡재 이익에 과세할 것을 요구했다. 그는 지구가 2.5°C 이상의 온난화로 향하고 있다고 경고했으며, 튀르키예와 브라질 정상들은 기후 대응이 부족하다고 말했다.",
+      "background_ko": "COP는 유엔 기후변화협약 당사국총회로, 매년 각국이 모여 기후 위기 대응을 논의하는 회의예요. 2015년 파리협정에서 지구 온도 상승을 1.5°C 이내로 억제하자는 목표가 세워졌어요. 온실가스를 적게 배출한 가난한 나라들이 오히려 피해를 크게 입는다는 점이 '기후 정의' 논쟁의 핵심이에요.",
+      "vocab": [
+        {
+          "en": "call for",
+          "ko": "~을 촉구하다"
+        },
+        {
+          "en": "windfall profits",
+          "ko": "횡재 이익, 초과 이윤"
+        },
+        {
+          "en": "head towards",
+          "ko": "~로 향하다"
+        },
+        {
+          "en": "fall short",
+          "ko": "미치지 못하다, 부족하다"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "urges",
+          "ko": "촉구하다"
+        },
+        {
+          "en": "climate justice",
+          "ko": "기후 정의"
+        },
+        {
+          "en": "pact",
+          "ko": "협약"
+        },
+        {
+          "en": "fossil fuel",
+          "ko": "화석연료"
+        },
+        {
+          "en": "firms",
+          "ko": "기업들"
+        },
+        {
+          "en": "UN chief",
+          "ko": "유엔 사무총장"
+        },
+        {
+          "en": "called for",
+          "ko": "촉구했다"
+        },
+        {
+          "en": "agreement",
+          "ko": "협정"
+        },
+        {
+          "en": "windfall profits",
+          "ko": "횡재 이익"
+        },
+        {
+          "en": "warned",
+          "ko": "경고했다"
+        },
+        {
+          "en": "heading towards",
+          "ko": "~로 향하는"
+        },
+        {
+          "en": "warming",
+          "ko": "온난화"
+        },
+        {
+          "en": "falling short",
+          "ko": "부족한, 미흡한"
+        }
+      ]
+    },
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T18:04:58.000Z",
+      "original_title": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+      "headline": "Russia-Ukraine talks in Abu Dhabi end without a breakthrough",
+      "headline_ko": "아부다비 러시아-우크라이나 회담, 돌파구 없이 종료",
+      "summary_en": "Talks between Russia, Ukraine and the US in Abu Dhabi focused on Europe's post-war security but produced no breakthrough. Both sides said a large prisoner exchange could happen soon. US envoys Steve Witkoff and Jared Kushner will meet Putin in Moscow and Zelensky in Dublin, while control of Donetsk remains the hardest issue.",
+      "summary_ko": "아부다비에서 열린 러시아·우크라이나·미국 회담은 유럽의 전후 안보에 초점을 맞췄지만 돌파구는 마련하지 못했다. 양측은 대규모 포로 교환이 곧 이뤄질 수 있다고 밝혔다. 미국 특사 스티브 위트코프와 재러드 쿠슈너는 모스크바에서 푸틴을, 더블린에서 젤렌스키를 만날 예정이며, 도네츠크 지역 통제 문제가 가장 어려운 쟁점으로 남아 있다.",
+      "background_ko": "러시아는 2022년 2월 우크라이나를 전면 침공했고, 그 뒤로 전쟁이 계속되고 있어요. 도네츠크는 우크라이나 동부의 공업 지역으로, 2014년부터 친러 세력과 분쟁이 이어진 곳이에요. 러시아는 나토(NATO, 서방 군사동맹)가 동쪽으로 확장하는 것을 큰 위협으로 여겨 왔어요.",
+      "vocab": [
+        {
+          "en": "breakthrough",
+          "ko": "돌파구"
+        },
+        {
+          "en": "focused on",
+          "ko": "~에 초점을 맞추다"
+        },
+        {
+          "en": "prisoner exchange",
+          "ko": "포로 교환"
+        },
+        {
+          "en": "envoys",
+          "ko": "특사들"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "talks",
+          "ko": "회담"
+        },
+        {
+          "en": "breakthrough",
+          "ko": "돌파구"
+        },
+        {
+          "en": "post-war",
+          "ko": "전후의"
+        },
+        {
+          "en": "security",
+          "ko": "안보"
+        },
+        {
+          "en": "produced",
+          "ko": "만들어 냈다"
+        },
+        {
+          "en": "prisoner exchange",
+          "ko": "포로 교환"
+        },
+        {
+          "en": "envoys",
+          "ko": "특사들"
+        },
+        {
+          "en": "control",
+          "ko": "통제, 지배"
+        },
+        {
+          "en": "remains",
+          "ko": "여전히 ~이다"
+        },
+        {
+          "en": "issue",
+          "ko": "쟁점"
+        },
+        {
+          "en": "end without",
+          "ko": "~없이 끝나다"
+        }
+      ]
+    }
+  ],
+  "resolution": "A/RES/81/9"
+}
