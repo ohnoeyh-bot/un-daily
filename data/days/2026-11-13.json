@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-13",
+  "news": [
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
+      "published": "2026-11-13T04:12:01.000Z",
+      "original_title": "US envoys shuttle between Putin and Zelenskyy",
+      "headline": "US envoys travel between Dublin and Moscow for Ukraine peace deal",
+      "headline_ko": "미국 특사들, 우크라이나 평화 협상 위해 더블린과 모스크바 오가",
+      "summary_en": "US envoys Steve Witkoff and Jared Kushner have shuttled between Dublin and Moscow, trying to broker a Russia-Ukraine peace deal. They met Volodymyr Zelenskyy and Vladimir Putin after the first direct Russia-Ukraine talks in nine months.",
+      "summary_ko": "미국 특사 스티브 위트코프와 재러드 쿠슈너가 러시아-우크라이나 평화 협정을 중재하기 위해 더블린과 모스크바를 오갔습니다. 이들은 9개월 만에 처음 열린 러시아-우크라이나 직접 회담 이후 볼로디미르 젤렌스키 대통령과 블라디미르 푸틴 대통령을 만났습니다.",
+      "background_ko": "러시아는 2022년 2월 우크라이나를 전면 침공했고, 그 뒤로 전쟁이 계속되고 있어요. 젤렌스키는 우크라이나 대통령, 푸틴은 러시아 대통령이에요. 위트코프와 쿠슈너는 트럼프 대통령과 가까운 인물로, 쿠슈너는 트럼프의 사위이기도 해요.",
+      "vocab": [
+        {
+          "en": "shuttle between",
+          "ko": "~사이를 오가다"
+        },
+        {
+          "en": "broker a deal",
+          "ko": "협상을 중재하다"
+        },
+        {
+          "en": "direct talks",
+          "ko": "직접 회담"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "envoys",
+          "ko": "특사들"
+        },
+        {
+          "en": "shuttled",
+          "ko": "오갔다"
+        },
+        {
+          "en": "broker",
+          "ko": "중재하다"
+        },
+        {
+          "en": "peace deal",
+          "ko": "평화 협정"
+        },
+        {
+          "en": "direct",
+          "ko": "직접적인"
+        },
+        {
+          "en": "talks",
+          "ko": "회담"
+        },
+        {
+          "en": "trying to",
+          "ko": "~하려고 노력하며"
+        }
+      ]
+    },
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168793",
+      "published": "2026-11-12T12:00:00.000Z",
+      "original_title": "Aid is the ‘only hope’ for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis",
+      "headline": "WFP chief warns funding cuts are worsening Sudan's hunger crisis",
+      "headline_ko": "WFP 수장, 자금 삭감으로 수단 기아 위기 악화 경고",
+      "summary_en": "After his first field mission to Sudan, WFP's new Executive Director Luke Lindberg warned that funding cuts are deepening the hunger crisis. The agency now reaches just over three million people, down from four million in August. It urgently needs $520 million to help 5.4 million people through April 2027.",
+      "summary_ko": "세계식량계획(WFP)의 신임 사무총장 루크 린드버그는 수단 첫 현장 방문 후 자금 삭감이 기아 위기를 심화시키고 있다고 경고했습니다. WFP는 현재 8월의 400만 명에서 줄어든 300만 명을 조금 넘는 사람들에게만 지원하고 있습니다. 2027년 4월까지 540만 명을 돕기 위해 5억 2천만 달러가 시급히 필요합니다.",
+      "background_ko": "수단에서는 2023년부터 정부군과 반군 신속지원군(RSF) 사이에 내전이 이어지고 있어요. 이 때문에 수많은 사람이 집을 잃고 피란민이 됐어요. WFP는 전 세계 굶주린 사람들에게 식량을 나눠 주는 유엔 기구예요.",
+      "vocab": [
+        {
+          "en": "funding cuts",
+          "ko": "자금 삭감"
+        },
+        {
+          "en": "deepen",
+          "ko": "심화시키다"
+        },
+        {
+          "en": "field mission",
+          "ko": "현장 방문"
+        },
+        {
+          "en": "urgently",
+          "ko": "시급히"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "chief",
+          "ko": "수장"
+        },
+        {
+          "en": "warns",
+          "ko": "경고하다"
+        },
+        {
+          "en": "funding cuts",
+          "ko": "자금 삭감"
+        },
+        {
+          "en": "worsening",
+          "ko": "악화시키는"
+        },
+        {
+          "en": "hunger crisis",
+          "ko": "기아 위기"
+        },
+        {
+          "en": "field mission",
+          "ko": "현장 방문"
+        },
+        {
+          "en": "Executive Director",
+          "ko": "사무총장"
+        },
+        {
+          "en": "deepening",
+          "ko": "심화시키는"
+        },
+        {
+          "en": "agency",
+          "ko": "기관"
+        },
+        {
+          "en": "reaches",
+          "ko": "도달하다, 지원하다"
+        },
+        {
+          "en": "urgently",
+          "ko": "시급히"
+        },
+        {
+          "en": "through",
+          "ko": "~까지"
+        }
+      ]
+    }
+  ],
+  "resolution": "A/RES/81/9"
+}
