@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-17",
+  "news": [
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field?traffic_source=rss",
+      "published": "2026-11-17T03:12:54.000Z",
+      "original_title": "Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field",
+      "headline": "Tankers hit in Strait of Hormuz as drone alarms Iraq gas field",
+      "headline_ko": "호르무즈 해협서 유조선 피격, 이라크 가스전엔 드론 경보",
+      "summary_en": "Iran's forces said three tankers struck mines and caught fire in or near the Strait of Hormuz, while a UK agency reported two separate tanker attacks. In Iraq's Kurdistan region, sirens sounded as a drone flew over the Khor Mor gas field. Meanwhile, a third US aircraft carrier arrived in the region.",
+      "summary_ko": "이란군은 유조선 3척이 호르무즈 해협 안팎에서 기뢰에 부딪혀 불이 났다고 밝혔고, 영국 기관은 이와 별도로 유조선 공격 2건을 보고했다. 이라크 쿠르디스탄 지역에서는 드론이 코르모르 가스전 상공을 비행하자 사이렌이 울렸다. 한편 세 번째 미국 항공모함이 이 지역에 도착했다.",
+      "background_ko": "호르무즈 해협은 페르시아만과 바깥 바다를 잇는 좁은 바닷길로, 전 세계 석유의 상당 부분이 이곳을 지나가요. 그래서 이곳에서 배가 공격받으면 세계 에너지 가격과 공급에 큰 영향을 줘요. 이란과 미국은 오랫동안 이 지역을 두고 갈등해 왔어요.",
+      "vocab": [
+        {
+          "en": "caught fire",
+          "ko": "불이 붙었다"
+        },
+        {
+          "en": "struck mines",
+          "ko": "기뢰에 부딪혔다"
+        },
+        {
+          "en": "aircraft carrier",
+          "ko": "항공모함"
+        },
+        {
+          "en": "sirens sounded",
+          "ko": "사이렌이 울렸다"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "Tankers",
+          "ko": "유조선"
+        },
+        {
+          "en": "Strait",
+          "ko": "해협"
+        },
+        {
+          "en": "alarms",
+          "ko": "경보를 울리게 하다"
+        },
+        {
+          "en": "gas field",
+          "ko": "가스전"
+        },
+        {
+          "en": "forces",
+          "ko": "군대"
+        },
+        {
+          "en": "struck",
+          "ko": "부딪혔다"
+        },
+        {
+          "en": "mines",
+          "ko": "기뢰"
+        },
+        {
+          "en": "caught fire",
+          "ko": "불이 붙었다"
+        },
+        {
+          "en": "agency",
+          "ko": "기관"
+        },
+        {
+          "en": "separate",
+          "ko": "별개의"
+        },
+        {
+          "en": "sirens",
+          "ko": "사이렌"
+        },
+        {
+          "en": "drone",
+          "ko": "드론, 무인기"
+        },
+        {
+          "en": "aircraft carrier",
+          "ko": "항공모함"
+        },
+        {
+          "en": "region",
+          "ko": "지역"
+        }
+      ]
+    },
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168812",
+      "published": "2026-11-16T12:00:00.000Z",
+      "original_title": "COP31 enters decisive week as climate talks face political test and AI initiatives gather pace",
+      "headline": "COP31 enters final week with deep divisions and new AI pledge",
+      "headline_ko": "COP31 마지막 주 돌입, 깊은 이견 속 AI 서약 출범",
+      "summary_en": "As COP31 in Antalya, Türkiye, entered its final week, countries remained divided over finance, fossil fuels, adaptation and the timing of the next IPCC report. Australia circulated a first draft decision. Türkiye and the ITU launched the Antalya AI Pledge to reduce AI's environmental footprint.",
+      "summary_ko": "튀르키예 안탈리아에서 열린 COP31이 마지막 주에 접어들었지만, 각국은 기후 재원, 화석연료, 기후 적응, 차기 IPCC 보고서 시기를 두고 여전히 의견이 갈렸다. 호주는 첫 결정문 초안을 회람했다. 튀르키예와 ITU는 AI의 환경 영향을 줄이기 위한 안탈리아 AI 서약을 출범시켰다.",
+      "background_ko": "COP는 유엔 기후변화협약 당사국총회로, 매년 세계 여러 나라가 모여 기후변화 대응을 논의하는 회의예요. IPCC는 기후변화에 관한 과학 연구를 모아 평가 보고서를 내는 유엔 기구예요. 2015년 파리협정에서는 지구 온도 상승을 1.5°C 안팎으로 막자는 목표를 세웠어요.",
+      "vocab": [
+        {
+          "en": "remained divided",
+          "ko": "의견이 여전히 갈렸다"
+        },
+        {
+          "en": "circulated",
+          "ko": "회람했다, 배포했다"
+        },
+        {
+          "en": "environmental footprint",
+          "ko": "환경적 영향"
+        },
+        {
+          "en": "adaptation",
+          "ko": "(기후변화) 적응"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "divisions",
+          "ko": "분열, 이견"
+        },
+        {
+          "en": "pledge",
+          "ko": "서약"
+        },
+        {
+          "en": "finance",
+          "ko": "재원, 자금"
+        },
+        {
+          "en": "fossil fuels",
+          "ko": "화석연료"
+        },
+        {
+          "en": "adaptation",
+          "ko": "적응"
+        },
+        {
+          "en": "timing",
+          "ko": "시기"
+        },
+        {
+          "en": "circulated",
+          "ko": "회람했다"
+        },
+        {
+          "en": "draft",
+          "ko": "초안"
+        },
+        {
+          "en": "decision",
+          "ko": "결정문"
+        },
+        {
+          "en": "launched",
+          "ko": "출범시켰다"
+        },
+        {
+          "en": "environmental footprint",
+          "ko": "환경적 영향"
+        },
+        {
+          "en": "remained divided",
+          "ko": "계속 의견이 갈렸다"
+        }
+      ]
+    }
+  ],
+  "resolution": "A/RES/81/9"
+}
