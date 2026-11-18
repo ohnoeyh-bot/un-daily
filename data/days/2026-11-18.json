@@ -1,0 +1,168 @@
+{
+  "date": "2026-11-18",
+  "news": [
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168828",
+      "published": "2026-11-17T12:00:00.000Z",
+      "original_title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls",
+      "headline": "UN: Ukraine civilian casualties in 2026 highest since full-scale invasion",
+      "headline_ko": "유엔 \"2026년 우크라이나 민간인 사상자, 전면 침공 이후 최다\"",
+      "summary_en": "The UN human rights mission in Ukraine says 2026 has seen more civilian casualties than any year since Russia's 2022 invasion. October casualties were 95 per cent higher than a year earlier. Missiles and drones caused over half of the casualties, while attacks on energy infrastructure forced rolling power outages nationwide.",
+      "summary_ko": "유엔 우크라이나 인권감시단은 2026년 민간인 사상자가 2022년 러시아 침공 이후 어느 해보다 많았다고 밝혔다. 10월 사상자는 1년 전보다 95% 증가했다. 미사일과 드론이 사상자의 절반 이상을 차지했으며, 에너지 기반시설 공격으로 전국에 순환 정전이 시행됐다.",
+      "background_ko": "러시아는 2022년 2월 이웃 나라 우크라이나를 전면 침공했고, 전쟁은 지금까지 이어지고 있어요. 유엔은 현지에 인권감시단을 두고 민간인 피해를 조사해 정기적으로 발표해요. 겨울철 발전소나 난방 시설이 공격받으면 일반 시민의 생활이 크게 위협받아요.",
+      "vocab": [
+        {
+          "en": "civilian casualties",
+          "ko": "민간인 사상자"
+        },
+        {
+          "en": "infrastructure",
+          "ko": "기반시설"
+        },
+        {
+          "en": "rolling power outages",
+          "ko": "순환 정전"
+        },
+        {
+          "en": "full-scale invasion",
+          "ko": "전면 침공"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "civilian",
+          "ko": "민간인"
+        },
+        {
+          "en": "casualties",
+          "ko": "사상자"
+        },
+        {
+          "en": "full-scale invasion",
+          "ko": "전면 침공"
+        },
+        {
+          "en": "human rights mission",
+          "ko": "인권 감시단"
+        },
+        {
+          "en": "since",
+          "ko": "~이후로"
+        },
+        {
+          "en": "per cent",
+          "ko": "퍼센트"
+        },
+        {
+          "en": "missiles",
+          "ko": "미사일"
+        },
+        {
+          "en": "drones",
+          "ko": "드론"
+        },
+        {
+          "en": "energy infrastructure",
+          "ko": "에너지 기반시설"
+        },
+        {
+          "en": "forced",
+          "ko": "불가피하게 하다"
+        },
+        {
+          "en": "rolling power outages",
+          "ko": "순환 정전"
+        },
+        {
+          "en": "nationwide",
+          "ko": "전국적으로"
+        }
+      ]
+    },
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/18/what-is-trump-hoping-to-achieve-at-apec-meeting-in-china?traffic_source=rss",
+      "published": "2026-11-18T01:33:05.000Z",
+      "original_title": "What is Trump hoping to achieve at APEC meeting in China?",
+      "headline": "Trump to meet Xi and Putin at APEC summit in China",
+      "headline_ko": "트럼프, 중국 APEC 정상회의서 시진핑·푸틴과 회동 예정",
+      "summary_en": "US President Donald Trump will attend the APEC summit in Shenzhen, where he is expected to meet Xi Jinping and hold a three-way meeting with Vladimir Putin. Experts expect few breakthroughs, with AI regulation, trade and Taiwan likely to dominate. The trip follows Democrats winning control of both chambers of Congress.",
+      "summary_ko": "도널드 트럼프 미국 대통령이 선전에서 열리는 APEC 정상회의에 참석해 시진핑 주석과 회담하고 블라디미르 푸틴 대통령과 3자 회담을 가질 예정이다. 전문가들은 AI 규제, 무역, 대만 문제가 주요 의제가 되겠지만 큰 돌파구는 없을 것으로 본다. 이번 방문은 민주당이 의회 양원을 장악한 직후 이뤄진다.",
+      "background_ko": "APEC은 아시아·태평양 지역 21개 경제체가 모여 경제 협력을 논의하는 협의체로, 매년 정상회의가 열려요. 미국과 중국은 세계 1, 2위 경제대국으로 무역과 첨단기술, 대만 문제를 두고 오랫동안 경쟁해 왔어요. 중국은 스스로 통치하는 섬인 대만을 자기 영토라고 주장해요.",
+      "vocab": [
+        {
+          "en": "breakthroughs",
+          "ko": "돌파구, 획기적 진전"
+        },
+        {
+          "en": "dominate",
+          "ko": "지배하다, 주를 이루다"
+        },
+        {
+          "en": "three-way meeting",
+          "ko": "3자 회담"
+        },
+        {
+          "en": "chambers of Congress",
+          "ko": "의회 양원"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "summit",
+          "ko": "정상회의"
+        },
+        {
+          "en": "attend",
+          "ko": "참석하다"
+        },
+        {
+          "en": "be expected to",
+          "ko": "~할 예정이다"
+        },
+        {
+          "en": "three-way meeting",
+          "ko": "3자 회담"
+        },
+        {
+          "en": "breakthroughs",
+          "ko": "돌파구"
+        },
+        {
+          "en": "regulation",
+          "ko": "규제"
+        },
+        {
+          "en": "trade",
+          "ko": "무역"
+        },
+        {
+          "en": "likely",
+          "ko": "~할 가능성이 큰"
+        },
+        {
+          "en": "dominate",
+          "ko": "주를 이루다"
+        },
+        {
+          "en": "follows",
+          "ko": "~에 뒤이어 일어나다"
+        },
+        {
+          "en": "control",
+          "ko": "장악, 지배"
+        },
+        {
+          "en": "chambers",
+          "ko": "(의회의) 원"
+        },
+        {
+          "en": "Congress",
+          "ko": "미국 의회"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2836 (2026)"
+}
