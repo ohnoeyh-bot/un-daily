@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-24",
+  "news": [
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T21:03:34.000Z",
+      "original_title": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+      "headline": "UK sanctions five Myanmar military leaders after ICJ genocide ruling",
+      "headline_ko": "영국, ICJ 집단학살 판결 후 미얀마 군 지도자 5명 제재",
+      "summary_en": "The UK has sanctioned five senior Myanmar military leaders after the International Court of Justice ruled Myanmar committed genocide against the Rohingya, the first time a state has been found guilty of the crime. Several countries, including Australia and Canada, acknowledged the ruling. The UK also plans legislation to stop aviation fuel supplies to Myanmar.",
+      "summary_ko": "국제사법재판소가 미얀마가 로힝야족을 상대로 집단학살을 저질렀다고 판결하자, 영국은 미얀마 군 고위 지도자 5명을 제재했다. 국가가 이 범죄로 유죄 판결을 받은 것은 처음이다. 호주, 캐나다 등 여러 나라가 판결을 인정했으며, 영국은 미얀마에 대한 항공유 공급을 막는 법안도 추진할 계획이다.",
+      "background_ko": "로힝야족은 불교도가 다수인 미얀마에 사는 이슬람계 소수민족으로, 오랫동안 시민권도 제대로 인정받지 못하며 차별을 받아 왔어요. 국제사법재판소(ICJ)는 네덜란드 헤이그에 있는 유엔의 최고 재판소로, 국가와 국가 사이의 분쟁을 다뤄요. 이 사건은 서아프리카의 감비아가 미얀마를 집단학살협약 위반으로 제소하면서 시작됐어요.",
+      "vocab": [
+        {
+          "en": "sanction",
+          "ko": "제재하다"
+        },
+        {
+          "en": "be found guilty of",
+          "ko": "~에 대해 유죄 판결을 받다"
+        },
+        {
+          "en": "acknowledge",
+          "ko": "인정하다"
+        },
+        {
+          "en": "legislation",
+          "ko": "법안, 입법"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "sanctions",
+          "ko": "제재하다"
+        },
+        {
+          "en": "military leaders",
+          "ko": "군 지도자"
+        },
+        {
+          "en": "genocide",
+          "ko": "집단학살"
+        },
+        {
+          "en": "ruling",
+          "ko": "판결"
+        },
+        {
+          "en": "senior",
+          "ko": "고위의"
+        },
+        {
+          "en": "International Court of Justice",
+          "ko": "국제사법재판소"
+        },
+        {
+          "en": "ruled",
+          "ko": "판결했다"
+        },
+        {
+          "en": "committed",
+          "ko": "저질렀다"
+        },
+        {
+          "en": "Rohingya",
+          "ko": "로힝야족"
+        },
+        {
+          "en": "state",
+          "ko": "국가"
+        },
+        {
+          "en": "found guilty of",
+          "ko": "~로 유죄 판결을 받은"
+        },
+        {
+          "en": "acknowledged",
+          "ko": "인정했다"
+        },
+        {
+          "en": "legislation",
+          "ko": "법안"
+        },
+        {
+          "en": "aviation fuel",
+          "ko": "항공유"
+        },
+        {
+          "en": "supplies",
+          "ko": "공급"
+        }
+      ]
+    },
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168859",
+      "published": "2026-11-23T12:00:00.000Z",
+      "original_title": "Security Council LIVE: Winter attacks on Ukraine's power grid and Black Sea shipping threaten lives and global food supplies",
+      "headline": "UN Security Council discusses Russian attacks on Ukraine's power grid",
+      "headline_ko": "유엔 안보리, 러시아의 우크라이나 전력망 공격 논의",
+      "summary_en": "As winter begins, the UN Security Council held a meeting on Monday about Russian attacks on Ukraine's energy grid, which are leaving civilians without heat, power and water. It will also examine how strikes on Black Sea shipping threaten grain supplies to import-dependent countries far from the frontline.",
+      "summary_ko": "겨울이 시작되면서 유엔 안전보장이사회는 월요일 러시아의 우크라이나 에너지망 공격에 관한 회의를 열었다. 이 공격으로 민간인들이 난방, 전기, 물 없이 지내고 있다. 안보리는 또한 흑해 해운에 대한 공격이 전선에서 멀리 떨어진 수입 의존국들의 곡물 공급을 어떻게 위협하는지도 살펴볼 예정이다.",
+      "background_ko": "러시아는 2022년 2월 우크라이나를 전면 침공했고, 그 뒤로 전쟁이 계속되고 있어요. 우크라이나는 세계적인 곡물 수출국이라서 흑해 항로가 막히면 다른 나라들의 식량 사정에도 영향을 줘요. 유엔 안전보장이사회는 국제 평화와 안보 문제를 다루는 유엔의 핵심 기구예요.",
+      "vocab": [
+        {
+          "en": "energy grid",
+          "ko": "에너지망, 전력망"
+        },
+        {
+          "en": "civilians",
+          "ko": "민간인"
+        },
+        {
+          "en": "import-dependent",
+          "ko": "수입에 의존하는"
+        },
+        {
+          "en": "frontline",
+          "ko": "전선"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "Security Council",
+          "ko": "안전보장이사회"
+        },
+        {
+          "en": "power grid",
+          "ko": "전력망"
+        },
+        {
+          "en": "energy grid",
+          "ko": "에너지망"
+        },
+        {
+          "en": "civilians",
+          "ko": "민간인"
+        },
+        {
+          "en": "heat",
+          "ko": "난방"
+        },
+        {
+          "en": "examine",
+          "ko": "살펴보다"
+        },
+        {
+          "en": "strikes",
+          "ko": "공격"
+        },
+        {
+          "en": "Black Sea",
+          "ko": "흑해"
+        },
+        {
+          "en": "shipping",
+          "ko": "해운"
+        },
+        {
+          "en": "threaten",
+          "ko": "위협하다"
+        },
+        {
+          "en": "grain supplies",
+          "ko": "곡물 공급"
+        },
+        {
+          "en": "import-dependent",
+          "ko": "수입에 의존하는"
+        },
+        {
+          "en": "frontline",
+          "ko": "전선"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2836 (2026)"
+}
