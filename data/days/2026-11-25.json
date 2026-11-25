@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-25",
+  "news": [
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168869",
+      "published": "2026-11-24T12:00:00.000Z",
+      "original_title": "Decades of gains against AIDS could unravel as HIV funding dries up",
+      "headline": "UN warns HIV funding cuts could reverse decades of AIDS progress",
+      "headline_ko": "유엔, HIV 지원금 삭감으로 수십 년간의 에이즈 퇴치 성과가 후퇴할 수 있다고 경고",
+      "summary_en": "UNAIDS warned that cuts to international HIV funding could undo decades of progress against AIDS. Prevention programmes have been hit hardest, with about 446,000 fewer people accessing PrEP in 2025. The agency says ending AIDS as a public health threat by 2030 is still possible if countries make HIV a national priority.",
+      "summary_ko": "유엔에이즈계획(UNAIDS)은 국제 HIV 지원금 삭감이 수십 년간 이룬 에이즈 퇴치 성과를 무너뜨릴 수 있다고 경고했다. 예방 프로그램이 가장 큰 타격을 입어, 2025년에는 PrEP를 이용한 사람이 약 44만 6천 명 줄었다. 이 기구는 각국이 HIV를 국가적 우선 과제로 삼는다면 2030년까지 공중보건 위협으로서의 에이즈를 종식하는 것이 여전히 가능하다고 밝혔다.",
+      "background_ko": "HIV는 면역 체계를 공격하는 바이러스이고, 치료하지 않으면 에이즈로 이어져요. 예전에는 사실상 사형 선고였지만, 지금은 약을 꾸준히 먹으면 관리할 수 있는 병이 됐어요. PrEP는 감염 위험이 높은 사람이 미리 약을 써서 감염을 막는 '예방 약'이고, 아프리카 등 많은 나라가 HIV 대응 비용을 해외 원조에 크게 의존해 왔어요.",
+      "vocab": [
+        {
+          "en": "undo",
+          "ko": "되돌리다, 무효로 만들다"
+        },
+        {
+          "en": "hit hardest",
+          "ko": "가장 큰 타격을 입다"
+        },
+        {
+          "en": "public health threat",
+          "ko": "공중보건 위협"
+        },
+        {
+          "en": "national priority",
+          "ko": "국가적 우선 과제"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "funding cuts",
+          "ko": "지원금 삭감"
+        },
+        {
+          "en": "reverse",
+          "ko": "후퇴시키다, 뒤집다"
+        },
+        {
+          "en": "decades",
+          "ko": "수십 년"
+        },
+        {
+          "en": "warned",
+          "ko": "경고했다"
+        },
+        {
+          "en": "undo",
+          "ko": "되돌리다"
+        },
+        {
+          "en": "progress",
+          "ko": "진전, 성과"
+        },
+        {
+          "en": "Prevention programmes",
+          "ko": "예방 프로그램"
+        },
+        {
+          "en": "hit hardest",
+          "ko": "가장 큰 타격을 입다"
+        },
+        {
+          "en": "accessing",
+          "ko": "이용하는, 접근하는"
+        },
+        {
+          "en": "PrEP",
+          "ko": "노출 전 예방요법"
+        },
+        {
+          "en": "agency",
+          "ko": "(국제) 기구"
+        },
+        {
+          "en": "public health threat",
+          "ko": "공중보건 위협"
+        },
+        {
+          "en": "national priority",
+          "ko": "국가적 우선 과제"
+        }
+      ]
+    },
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T10:58:51.000Z",
+      "original_title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+      "headline": "Nato vows space defence after reports of Russian nuclear satellite",
+      "headline_ko": "나토, 러시아 핵위성 보도 이후 우주 방어 다짐",
+      "summary_en": "German media reported that Russia may launch a nuclear-armed satellite within 60 days, citing intelligence shared among Nato countries. Nato chief Mark Rutte said the alliance would defend against threats in space. The Kremlin dismissed the reports, and Russia's embassy called them unfounded allegations and propaganda.",
+      "summary_ko": "독일 언론은 나토 회원국들 사이에 공유된 정보를 인용해, 러시아가 60일 안에 핵무장 위성을 발사할 수 있다고 보도했다. 마르크 뤼터 나토 사무총장은 동맹이 우주에서의 위협에 맞서 방어하겠다고 말했다. 크렘린은 보도를 일축했고, 러시아 대사관은 이를 근거 없는 주장이자 선전이라고 했다.",
+      "background_ko": "나토(NATO)는 미국과 유럽 여러 나라가 함께 만든 군사 동맹으로, 한 회원국이 공격받으면 모두가 함께 방어한다는 원칙이 있어요. 크렘린은 러시아 대통령 집무실이 있는 곳으로, 보통 러시아 정부를 뜻해요. 1967년 우주조약은 대량살상무기를 지구 궤도에 두는 것을 금지하고 있고, 러시아도 이 조약에 가입해 있어요.",
+      "vocab": [
+        {
+          "en": "citing",
+          "ko": "~을 인용하여"
+        },
+        {
+          "en": "defend against",
+          "ko": "~에 맞서 방어하다"
+        },
+        {
+          "en": "dismissed",
+          "ko": "일축했다"
+        },
+        {
+          "en": "unfounded allegations",
+          "ko": "근거 없는 주장"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "vows",
+          "ko": "다짐하다, 맹세하다"
+        },
+        {
+          "en": "space defence",
+          "ko": "우주 방어"
+        },
+        {
+          "en": "nuclear satellite",
+          "ko": "핵위성"
+        },
+        {
+          "en": "nuclear-armed",
+          "ko": "핵무장한"
+        },
+        {
+          "en": "launch",
+          "ko": "발사하다"
+        },
+        {
+          "en": "citing",
+          "ko": "~을 인용하여"
+        },
+        {
+          "en": "intelligence",
+          "ko": "정보(첩보)"
+        },
+        {
+          "en": "alliance",
+          "ko": "동맹"
+        },
+        {
+          "en": "threats",
+          "ko": "위협"
+        },
+        {
+          "en": "Kremlin",
+          "ko": "크렘린(러시아 정부)"
+        },
+        {
+          "en": "dismissed",
+          "ko": "일축했다"
+        },
+        {
+          "en": "embassy",
+          "ko": "대사관"
+        },
+        {
+          "en": "unfounded allegations",
+          "ko": "근거 없는 주장"
+        },
+        {
+          "en": "propaganda",
+          "ko": "선전, 프로파간다"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2836 (2026)"
+}
