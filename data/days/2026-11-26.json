@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-26",
+  "news": [
+    {
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T04:10:58.000Z",
+      "original_title": "US announces new tariffs on host of countries including China",
+      "headline": "US proposes new tariffs on China, EU and twelve others",
+      "headline_ko": "미국, 중국·EU 등 14개 지역에 새 관세 부과 제안",
+      "summary_en": "The US Trade Representative has proposed new tariffs on 14 jurisdictions, including China, the EU, Japan and South Korea, with rates of up to 40% for China. The duties are not expected to take effect until next year. Several affected governments have criticised the move.",
+      "summary_ko": "미국 무역대표부가 중국, EU, 일본, 한국 등 14개 지역에 새 관세를 제안했으며, 중국에는 최대 40%의 세율이 적용됩니다. 이 관세는 내년 이전에는 시행되지 않을 것으로 보입니다. 영향을 받는 여러 정부가 이 조치를 비판했습니다.",
+      "background_ko": "관세는 다른 나라에서 들어오는 물건에 매기는 세금이에요. 트럼프 대통령은 관세로 미국 제조업을 살리고 무역적자를 줄이겠다고 주장해 왔어요. 미국 무역대표부(USTR)는 미국의 무역 정책과 협상을 담당하는 정부 기관이에요.",
+      "vocab": [
+        {
+          "en": "take effect",
+          "ko": "시행되다, 효력을 발휘하다"
+        },
+        {
+          "en": "criticised",
+          "ko": "비판했다"
+        },
+        {
+          "en": "jurisdictions",
+          "ko": "관할 지역"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "proposes",
+          "ko": "제안하다"
+        },
+        {
+          "en": "tariffs",
+          "ko": "관세"
+        },
+        {
+          "en": "Trade Representative",
+          "ko": "무역대표부"
+        },
+        {
+          "en": "proposed",
+          "ko": "제안했다"
+        },
+        {
+          "en": "jurisdictions",
+          "ko": "관할 지역"
+        },
+        {
+          "en": "rates",
+          "ko": "세율"
+        },
+        {
+          "en": "up to",
+          "ko": "최대 ~까지"
+        },
+        {
+          "en": "duties",
+          "ko": "관세"
+        },
+        {
+          "en": "take effect",
+          "ko": "시행되다"
+        },
+        {
+          "en": "affected",
+          "ko": "영향을 받는"
+        },
+        {
+          "en": "criticised",
+          "ko": "비판했다"
+        },
+        {
+          "en": "move",
+          "ko": "조치"
+        }
+      ]
+    },
+    {
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168879",
+      "published": "2026-11-25T12:00:00.000Z",
+      "original_title": "Türk warns of widening risk of atrocity crimes against Palestinians",
+      "headline": "UN rights chief warns of growing risk of atrocities against Palestinians",
+      "headline_ko": "유엔 인권 대표, 팔레스타인인 대상 잔학 범죄 위험 확대 경고",
+      "summary_en": "UN human rights chief Volker Türk warned that the risk of further atrocity crimes by Israel against Palestinians is widening, citing recent violence in the occupied West Bank. He said civilians are still being killed and many displaced, and urged all states to act and support independent investigations.",
+      "summary_ko": "폴커 튀르크 유엔 인권최고대표는 최근 점령지 요르단강 서안의 폭력을 언급하며 이스라엘의 팔레스타인인에 대한 잔학 범죄 위험이 커지고 있다고 경고했습니다. 그는 민간인이 여전히 죽고 많은 사람이 강제 이주되고 있다며, 모든 국가가 행동하고 독립적인 조사를 지지해야 한다고 촉구했습니다.",
+      "background_ko": "요르단강 서안과 가자지구는 팔레스타인 지역으로, 이스라엘이 1967년 전쟁 이후 점령해 왔어요. 2023년 10월 7일 하마스 주도의 공격 이후 가자에서 큰 전쟁이 벌어졌어요. 유엔 인권최고대표는 전 세계 인권 문제를 감시하는 유엔의 최고 책임자예요.",
+      "vocab": [
+        {
+          "en": "citing",
+          "ko": "~을 근거로 들며"
+        },
+        {
+          "en": "displaced",
+          "ko": "강제로 이주된"
+        },
+        {
+          "en": "urged",
+          "ko": "촉구했다"
+        },
+        {
+          "en": "widening",
+          "ko": "확대되는"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "rights chief",
+          "ko": "인권 책임자"
+        },
+        {
+          "en": "atrocities",
+          "ko": "잔학 행위"
+        },
+        {
+          "en": "atrocity crimes",
+          "ko": "잔학 범죄"
+        },
+        {
+          "en": "widening",
+          "ko": "확대되는"
+        },
+        {
+          "en": "citing",
+          "ko": "~을 들며"
+        },
+        {
+          "en": "occupied",
+          "ko": "점령된"
+        },
+        {
+          "en": "West Bank",
+          "ko": "요르단강 서안"
+        },
+        {
+          "en": "civilians",
+          "ko": "민간인"
+        },
+        {
+          "en": "displaced",
+          "ko": "강제 이주된"
+        },
+        {
+          "en": "urged",
+          "ko": "촉구했다"
+        },
+        {
+          "en": "independent investigations",
+          "ko": "독립적인 조사"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2836 (2026)"
+}
