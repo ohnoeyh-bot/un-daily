@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-28",
+  "news": [
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/us-disables-ship-attempting-to-breach-iran-blockade?traffic_source=rss",
+      "published": "2026-11-27T23:55:16.000Z",
+      "original_title": "US disables ship attempting to breach Iran blockade",
+      "headline": "US military disables ship trying to break Iran blockade",
+      "headline_ko": "미군, 이란 봉쇄 돌파하려던 선박 무력화",
+      "summary_en": "The US military says it disabled a commercial ship that left an Iranian port and ignored warnings to stop. Tehran has vowed to break the blockade, which has reportedly cost the US $2 billion to operate since it was reinstated in July.",
+      "summary_ko": "미군은 이란 항구를 떠나 정지 경고를 무시한 상선을 무력화했다고 밝혔다. 이란 정부는 봉쇄를 깨겠다고 공언했으며, 보도에 따르면 이 봉쇄는 7월 재개 이후 미국에 20억 달러의 운영 비용이 든 것으로 알려졌다.",
+      "background_ko": "봉쇄란 군대가 특정 나라의 항구나 바닷길을 막아 배가 드나들지 못하게 하는 조치예요. 이란 근처의 호르무즈 해협은 전 세계 석유가 많이 지나가는 중요한 바닷길이라, 이 지역의 긴장은 국제 유가와 무역에 큰 영향을 줘요. 미국과 이란은 오랫동안 핵 문제 등으로 대립해 온 사이예요.",
+      "vocab": [
+        {
+          "en": "disable",
+          "ko": "무력화하다, 작동 불능으로 만들다"
+        },
+        {
+          "en": "ignore warnings",
+          "ko": "경고를 무시하다"
+        },
+        {
+          "en": "vow to",
+          "ko": "~하겠다고 맹세하다"
+        },
+        {
+          "en": "reinstate",
+          "ko": "복원하다, 재개하다"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "disables",
+          "ko": "무력화하다"
+        },
+        {
+          "en": "blockade",
+          "ko": "봉쇄"
+        },
+        {
+          "en": "commercial ship",
+          "ko": "상선"
+        },
+        {
+          "en": "port",
+          "ko": "항구"
+        },
+        {
+          "en": "ignored",
+          "ko": "무시했다"
+        },
+        {
+          "en": "warnings",
+          "ko": "경고"
+        },
+        {
+          "en": "Tehran",
+          "ko": "테헤란(이란 정부)"
+        },
+        {
+          "en": "has vowed",
+          "ko": "맹세했다, 공언했다"
+        },
+        {
+          "en": "break",
+          "ko": "깨뜨리다, 돌파하다"
+        },
+        {
+          "en": "reportedly",
+          "ko": "보도에 따르면"
+        },
+        {
+          "en": "operate",
+          "ko": "운영하다"
+        },
+        {
+          "en": "reinstated",
+          "ko": "재개된, 복원된"
+        }
+      ]
+    },
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/28/un-chief-frontrunner-urged-to-speak-out-over-albanese-detention-2?traffic_source=rss",
+      "published": "2026-11-28T04:46:16.000Z",
+      "original_title": "UN chief frontrunner urged to speak out over Albanese detention",
+      "headline": "UN chief frontrunner Grynspan urged to speak out on Albanese detention",
+      "headline_ko": "유엔 사무총장 유력 후보 그린스판에 알바네세 억류 관련 입장 표명 촉구",
+      "summary_en": "More than 400 people signed an open letter urging Rebeca Grynspan, Costa Rica's candidate for UN secretary-general, to press her government to admit UN expert Francesca Albanese, held at an airport near San Jose. Grynspan led a recent Security Council straw poll but did not immediately respond.",
+      "summary_ko": "400명 이상이 공개서한에 서명해, 코스타리카의 유엔 사무총장 후보 레베카 그린스판에게 산호세 인근 공항에 억류된 유엔 전문가 프란체스카 알바네세의 입국을 허용하도록 자국 정부를 압박하라고 촉구했다. 그린스판은 최근 안전보장이사회 예비 투표에서 선두를 차지했지만 즉각 응답하지 않았다.",
+      "background_ko": "유엔 사무총장은 유엔을 이끄는 최고 책임자로, 안전보장이사회가 추천하고 총회가 임명해요. 특히 미국, 중국, 러시아, 영국, 프랑스 같은 상임이사국은 거부권이 있어서 이들의 지지가 중요해요. 유엔 특별보고관은 특정 인권 문제를 독립적으로 조사해 보고하는 전문가예요.",
+      "vocab": [
+        {
+          "en": "open letter",
+          "ko": "공개서한"
+        },
+        {
+          "en": "urge",
+          "ko": "촉구하다"
+        },
+        {
+          "en": "press",
+          "ko": "압박하다"
+        },
+        {
+          "en": "straw poll",
+          "ko": "예비 투표, 비공식 여론조사"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "frontrunner",
+          "ko": "선두 주자, 유력 후보"
+        },
+        {
+          "en": "urged",
+          "ko": "촉구받은"
+        },
+        {
+          "en": "speak out",
+          "ko": "공개적으로 의견을 밝히다"
+        },
+        {
+          "en": "detention",
+          "ko": "억류, 구금"
+        },
+        {
+          "en": "open letter",
+          "ko": "공개서한"
+        },
+        {
+          "en": "candidate",
+          "ko": "후보"
+        },
+        {
+          "en": "secretary-general",
+          "ko": "사무총장"
+        },
+        {
+          "en": "press",
+          "ko": "압박하다"
+        },
+        {
+          "en": "admit",
+          "ko": "입국을 허용하다"
+        },
+        {
+          "en": "held",
+          "ko": "억류된"
+        },
+        {
+          "en": "Security Council",
+          "ko": "(유엔) 안전보장이사회"
+        },
+        {
+          "en": "straw poll",
+          "ko": "예비 투표"
+        },
+        {
+          "en": "immediately",
+          "ko": "즉시"
+        },
+        {
+          "en": "respond",
+          "ko": "응답하다"
+        }
+      ]
+    }
+  ],
+  "resolution": "S/RES/2836 (2026)"
+}
